@@ -20,44 +20,140 @@
                         <a class="inactive" href="#">home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a class="activelink" href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">products</a>
+                        <a class="activelink" href="#">products</a>
                     </li>
                 </ul>
             </nav>
-            <button class="button2">Sign Up</button>
+            <div class="logo1"><button class="button2">Sign Up</button></div>
         </div>
     </header>
-    <section class="container">
+    <section class="p1_hero container">
+        <span class="greenBg blur_size1 hero_blur1"></span>
+        <span class="greenBg blur_size1 hero_blur2"></span>
         <div class="hero_content">
-            <div class="flex_column">
-            <h3 class="text_regular">EVOLVE . <b>GROW.</b> CREATE REALITY</h3>
+            <!-- TOP LEFT CARD -->
+            <div class="mini_productcard">
+                <!-- CABBAGE MODEL -->
+                 <h5 class="text_extraBold text_uppercase">Top product</h5>
+                <model-viewer class="mini_product_viewer " src="public/models/savoy_cabbage.glb" src="public/models/Savoy_Cabbage.usdz"  camera-controls 
+                tone-mapping="neutral" poster="poster.webp" 
+                shadow-intensity="1" exposure="1" 
+                camera-orbit="153.4deg 38.32deg 26.92m" 
+                field-of-view="30deg" 
+                auto-rotate poster="public\models\cabbage_poster.png" 
+                disable-zoom>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer>
+                <div class="text_buttonFlex">
+                    <h6 class="text_light">Cabbage loaf</h6>
+                    <div class="button_container1">
+                        <button class="button2 button3">
+                            <img class="icon1" src="public/images/arrowwhite.svg"> 
+                            <img class="icon2" src="public/images/arrowgreen.svg">
+                         </button>
+                    </div>
+                </div>
+                </div>
+                <!-- STATS -->
+                <div class="hero_stats scroll_animate focus_in">
+                    <div>
+                        <h2>127+</h2>
+                        <h4 class="text_regular">Organic Crops</h4>
+                    </div>
+                    <div>
+                        <h2>25 <span>K/Y</span></h2>
+                        <h4 class="text_regular">Original Produce</h4>
+                    </div>
+                </div>
+        <div class="flex_column focus_in scroll_animate">
+            <h3 class="text_regular">EVOLVE . <b>GROW .</b> CREATE REALITY</h3>
             <h1>مـــــزارع حيـــــاة</h1>
         </div>
-   <model-viewer class="hero_model" 
-    src="public/models/bonsai.glb"
-    ar ar-modes="webxr scene-viewer quick-look"
-    camera-controls
-    tone-mapping="neutral"
-    poster="poster.webp"
-    shadow-intensity="1"
-    camera-orbit="77deg 40eg 1015m"
-    min-camera-orbit="60deg 60deg 1015m"
-    max-camera-orbit="105deg 60deg 1015m"
-    camera-target="-14.04m 20m -54.61m"
-    field-of-view="21deg"
-    min-field-of-view="21deg"
-    exposure="0.9"
-    disable-zoom
-    disable-tap>
-    <div class="progress-bar hide" slot="progress-bar">
-    <div class="update-bar"></div>
+        <!-- HEROTREEMODEL -->
+        <model-viewer class="hero_model scroll_animate" 
+            src="public/models/bonsai.glb"
+            ar ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            tone-mapping="neutral"
+            poster="poster.webp"
+            shadow-intensity="1"
+            camera-orbit="77deg 40eg 1015m"
+            min-camera-orbit="60deg 60deg 1015m"
+            max-camera-orbit="105deg 60deg 1015m"
+            camera-target="-14.04m 20m -54.61m"
+            field-of-view="21deg"
+            min-field-of-view="21deg"
+            exposure="0.9"
+            disable-zoom
+            disable-tap>
+            <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+            </div>
+            </model-viewer>
+            <div class="main_buttoncontainer">
+                <button class="button2 main_button">View Products <div><img src="public/images/arrowgreen.svg"> </div></button>
+            </div>
     </div>
-    </model-viewer>
+    <div class=" blurred_separator hero_separator">
+        <span></span>
     </div>
-    <span class="hero_separator blurred_separator"></span>
+    </section>
+    <!-- OFFERSSECTION -->
+    <section class="p1_section2">
+        <div class="blurred_separator blurred_separator2 separator_top mintgreen_bg">
+        <span></span>
+    </div>
+        <div class="container">
+             <div class="flex_column">
+        <h3 class="text_bold">
+            What we offer
+        </h3>
+        <h4 class="text_regular">Explore every detail of our produce in 3D</h4>
+    </div>
+            <div class="p1_section2Flex">
+                <!-- 1 -->
+                <div class="offers_card move_focus scroll_animate">
+                    <div class="title">
+                        <img src="public/images/recycle.svg">
+                        <h4 class="text_bold h4_2">Recyclable Packaging</h4>
+                        <h4 class="text_regular h4_2">Track every step from farm to your doorstep</h4>
+                        <button class="learn_more">Learn more <img src="public/images/arrowgreen.svg" alt=""></button>
+                    </div>
+                </div>
+                <!-- 2 -->
+                 <div class="offers_card move_focus scroll_animate offers_card_position2">
+                    <div class="title">
+                        <img src="public/images/electricity.svg">
+                        <h4 class="text_bold h4_2">Transparent Supply Chain</h4>
+                        <h4 class="text_regular h4_2">Track every step from farm to your doorstep</h4>
+                        <button class="learn_more">Learn more <img src="public/images/arrowgreen.svg" alt=""></button>
+                    </div>
+                </div>
+                <!-- 3 -->
+                 <div class="offers_card move_focus scroll_animate">
+                    <div class="title">
+                        <img src="public/images/recycle.svg">
+                        <h4 class="text_bold h4_2">Recyclable Packaging</h4>
+                        <h4 class="text_regular h4_2">Track every step from farm to your doorstep</h4>
+                        <button class="learn_more">Learn more <img src="public/images/arrowgreen.svg" alt=""></button>
+                    </div>
+                </div>
+                <!-- 4 -->
+                 <div class="offers_card  move_focus scroll_animate offers_card_position2">
+                    <div class="title">
+                        <img src="public/images/sun.svg">
+                        <h4 class="text_bold h4_2">Natural Sunlight</h4>
+                        <h4 class="text_regular h4_2">Track every step from farm to your doorstep</h4>
+                        <button class="learn_more">Learn more <img src="public/images/arrowgreen.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- MODELVIEWERLIBRARY-->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>

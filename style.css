@@ -1,5 +1,6 @@
 :root{
     --mainaccent: hsla(106, 86%, 14%, 1);
+    --mainaccent2: #1C6506;
     --secondaryaccent:hsla(106, 63%, 34%, 1);
     --extremewhite:hsla(38, 44%, 96%, 1);
     --offwhite: hsla(90, 13%, 85%, 1);
@@ -10,7 +11,7 @@
 }
 @font-face {
     font-family: "The Year of The Camel";
-    src: url('Public/Fonts/Acumin-Variable-Concept.ttf');
+    src: url('public/fonts/alfont_com_TheYearofTheCamel-Medium.otf');
 }
 *{
     margin: 0;
@@ -29,7 +30,7 @@ header{
 }
 .header_container{
     display: flex;
-    padding: 34px 92px;
+    padding: 22px 92px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -39,11 +40,17 @@ header{
 }
 body{
     background: var(--offwhite);
+    overflow-x: hidden;
 }
 .blurred_separator{
-    width: 110%;
-    height: 200px;
+    width: 100vw;
+    height: 300px;
     position: absolute;
+    display: flex;
+    z-index: 2;
+}
+.blurred_separator span{
+    width: 100%;
     filter: blur(28px);
     left: -5%;
 }
@@ -51,6 +58,8 @@ body{
     width: 550px;
     height: 550px;
     position: absolute;
+    filter: blur(80px);
+    opacity: 0.5;
 }
 nav{
     width: 100%;
@@ -72,8 +81,16 @@ nav ul li{
     align-items: center;
     text-transform: capitalize;
 }
+nav ul li a{
+    transition: all 200ms ease;
+}
+.activelink:hover {
+    color: var(--mainaccent2);
+    filter: drop-shadow(2px 4px 20px var(--mainaccent2));
+}
 .logo1{
     width: 136px;
+    height: 43px;
 }
 .hero{
     width: 100%;
@@ -88,6 +105,10 @@ h5{
 h4{
     font-size: 24px;
 }
+.h4_2{
+    font-size: 20px;
+    
+}
 h3{
     font-size: 42px;
 }
@@ -95,7 +116,7 @@ h2{
     font-size: 62px;
 }
 h1{
-    color: #1C6506;
+    color: var(--mainaccent2);
     text-align: center;
     font-family: "The Year of The Camel";
     font-size: 111px;
@@ -103,8 +124,23 @@ h1{
     font-weight: 300;
     line-height: normal;
 }
+.text_light{
+    font-weight: 300;
+}
 .text_regular{
     font-weight: 400;
+}
+.text_bold{
+    font-weight: 700;
+}
+.text_extraBold{
+    font-weight: 800;
+}
+.text_black{
+    font-weight: 800;
+}
+.text_uppercase{
+    text-transform: uppercase;
 }
 a{
     text-decoration: none;
@@ -118,7 +154,6 @@ button{
     justify-content: center;
     align-items: center;
     background: var(--mainaccent, #134205);
-    box-shadow: 2px 4px 4px;
     border-radius: 24px;
     color: var(--offwhite, #D9DED4);
     font-size: 20px;
@@ -130,11 +165,12 @@ button{
     opacity: 0.5;
 }
 .button2:hover{
-    background-color: var(--offwhite);
+    background-color: var(--extremewhite);
     color: var(--mainaccent);
-    padding: 12px 36px;
+    padding: 12px 32px;
     border: 1px solid var(--mainaccent);
     box-sizing: border-box;
+    box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.40);
 }
 .container{
     display: flex;
@@ -146,7 +182,6 @@ button{
     max-width: 1840px;
     margin: 0 auto;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 .flex_column{
     display: flex;
@@ -165,31 +200,341 @@ button{
     background-size: cover;
     position: relative;
 }
+.hero_content h3{
+ color: var(--mainaccent2);
+}
 model-viewer {
-   
 margin: 0 auto;
 overflow: visible;
 }
 .hero_model{
-    width: 100%;
+    width: 800px;
     height: 629px;
+    z-index: 2;
     position: relative;
     animation: scale-in 1200ms ease-in-out forwards;
 }
+
 .hero_separator{
-    background: var(--blur1color);
-    bottom: 85px;
+    bottom: 0;
     z-index: 2;
+}
+.hero_separator span{
+    background-color: var(--blur1color);
 }
 @keyframes scale-in {
     from{
         opacity: 0;
         transform: scale(0.5);
+        filter: blur(12px);
         top: 50px;
     }
     to{
         opacity: 1;
+        filter: blur(0px);
         transform: scale(1);
         top: -70px;
     }
+}
+.focus_in{
+    opacity: 0;
+     animation: focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes focus-in {
+  0% {
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.move_focus{
+    position: relative;
+    transform: translateY(100px);
+    animation: move-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@keyframes move-focus-in {
+  0% {
+    transform: translateY(100px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.offers_card_position2{
+    margin-top: 60px;
+}
+.mint_greenBg{
+    background: var(--secondaryaccent);
+}
+.hero_blur1{
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.hero_blur2{
+    right: -400px;
+    bottom: 200px;
+    height: 600px;
+    z-index: 2;
+}
+.mini_productcard{
+    width: 221px;
+    flex-shrink: 0;
+    padding: 22px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 24px 0;
+    background: rgba(250, 247, 242, 0.64);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.hero_content h4{
+    color: var(--mainaccent2);
+}
+.mini_product_viewer{
+    width:100%;
+    height: 124px;
+    padding: 12px;
+    box-sizing: border-box;
+    background: linear-gradient(260deg, rgba(255, 255, 255, 0.57) 31%, rgba(196, 215, 191, 0.57) 88%);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(57, 139, 32, 0.122);
+}
+.mini_productcard h5{
+    text-align: left;
+    margin-bottom: 4px;
+}
+button .icon1, button:hover .icon2{
+    display: block;
+}
+button:hover .icon1, button .icon2{
+    display: none;
+}
+.button_container1{
+    width: 58px;
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.button2 .arrow{
+    width: 18px;
+    height: 18px;
+}
+.text_buttonFlex{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.button3{
+    padding: 6px 16px;
+}
+.button3:hover{
+    padding: 6px 20px;
+}
+.main_buttoncontainer{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+.main_button{
+    display: flex;
+    height: 68px;
+    box-sizing: border-box;
+    padding: 0 10px 0 32px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    bottom: 100px;
+    font-size: 24px;
+    box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.40);
+    border-radius: 100px;
+}
+.main_button:hover {
+    padding: 0 10px 0 32px;
+    gap: 30px;
+    box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.40);
+}
+.main_button:hover div img {
+    transform: rotate(-35deg);
+}
+.main_button div{
+    display: flex;
+    width: 52px;
+    height: 52px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: var(--extremewhite, #FAF7F2);
+    border-radius: 100px;
+}
+.main_button img{
+    width: 28px;
+    height: auto;
+    transition: all 200ms ease-in-out;
+}
+.scroll_animate{
+    view-timeline: --scroll-tl;
+    animation-timeline: --scroll-tl;
+    animation-delay: cover 10%;
+    animation-range: cover 10% cover 35%;
+}
+.hero_stats{
+    display: flex;
+    width: 251px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    height: 157px;
+    position: absolute;
+    right: 32px;
+    min-height: 350px;
+    z-index: 1;
+}
+.hero_stats div{
+    display: flex;
+    padding: 20px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%);
+    backdrop-filter: blur(45px);
+}
+.hero_stats div h2{
+    font-size: 83px;
+    font-weight: 470;
+    text-wrap: nowrap;
+}
+.hero_stats div h2 span{
+    font-size: 48px;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+}
+.p1_section2{
+    background-image: url(public/images/p1sec2bg.jpg);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    position: sticky;
+    z-index: 1;
+    padding: 40px 0 0 0;
+    width: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.p1_section2Flex{
+    display: flex;
+    height: 300px; 
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 22px;
+}
+.offers_card{
+    display: flex;
+    width: 100%;
+    padding: 33px 22px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(198deg, rgba(255, 255, 255, 0.57) 31.36%, rgba(196, 215, 191, 0.57) 87.48%);
+    background: linear-gradient(198deg, rgba(255, 255, 255, 0.57) 31.36%, rgba(196, 215, 191, 0.57) 87.48%);
+    box-shadow: -3px 8px 14.6px 0 rgba(235, 240, 235, 0.20);
+    backdrop-filter: blur(3px);
+    border: 0.5px solid #ffffff00;
+    border-radius: 12px;
+    height: auto;
+    transition: all 200ms ease-in-out;
+}
+.offers_card .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+.offers_card .title img{
+    width: 48px;
+    height: auto;
+    overflow: visible;
+    object-fit: none;
+}
+.offwhite_bg{
+    background: var(--offwhite);
+}
+.separator_top{
+    z-index: 2;
+    top: -30px;
+}
+.separator_bottom{
+    z-index: 2;
+    bottom: -30px;
+}
+.blurred_separator2{
+    height: 60px;
+    filter: blur(18px);
+}
+.p1_hero{
+    position: sticky;
+}
+.mintgreen_bg{
+    background: var(--blur1color)
+}
+.learn_more{
+    display: flex;
+    background:none;
+    gap: 10px;
+    margin-top: 10px;
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+    height: 0;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    white-space: nowrap;
+    width: 100%;
+}
+.learn_more:hover{
+    gap: 4px;
+}
+.learn_more img{
+    width: 20px;
+height: 20px;
+}
+.offers_card:hover .learn_more{
+    height: 30px;
+    opacity: 1;
+}
+.offers_card:hover{
+    border: 0.5px solid var(--extremewhite);
+
+background: linear-gradient(198deg, rgba(255, 255, 255, 0.57) 31.36%, rgba(196, 215, 191, 0.57) 87.48%);
+
+box-shadow: -3px 8px 20px 0 rgba(235, 240, 235, 0.50);
 }
