@@ -11,7 +11,7 @@
 }
 @font-face {
     font-family: "The Year of The Camel";
-    src: url('public/fonts/alfont_com_TheYearofTheCamel-Medium.otf');
+    src: url('public/fonts/alfont_com_TheYearofTheCamel-Regular.otf');
 }
 .arabic_font{
     font-family: "The Year of The Camel";
@@ -115,6 +115,9 @@ h4{
 h3{
     font-size: 42px;
 }
+.h3_2{
+    font-size: 32px;
+}
 h2{
     font-size: 62px;
 }
@@ -137,6 +140,9 @@ p{
 }
 .text_regular{
     font-weight: 400;
+}
+.text_semibold{
+    font-weight: 500;
 }
 .text_bold{
     font-weight: 700;
@@ -280,6 +286,10 @@ model-viewer::part(default-progress-bar) {
     opacity: 1;
   }
 }
+.greenBg {
+    background: var(--mainaccent2);
+    opacity: 0.5;
+}
 .offers_card_position2{
     margin-top: 60px;
 }
@@ -381,6 +391,7 @@ button:hover .icon1, button .icon2{
     font-size: 20px;
     box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.40);
     border-radius: 100px;
+    color: var(--extremewhite);
 }
 .main_button:hover {
     padding: 0 10px 0 32px;
@@ -409,7 +420,7 @@ button:hover .icon1, button .icon2{
     view-timeline: --scroll-tl;
     animation-timeline: --scroll-tl;
     animation-delay: cover 10%;
-    animation-range: cover 10% cover 35%;
+    animation-range: cover 10% cover 30%;
 }
 .scroll_animate{
     view-timeline: --scroll-tl;
@@ -519,7 +530,7 @@ button:hover .icon1, button .icon2{
 }
 .blurred_separator2{
     height: 60px;
-    filter: blur(18px);
+    filter: blur(12px);
 }
 .p1_hero{
     position: sticky;
@@ -566,6 +577,9 @@ button:hover .icon1, button .icon2{
 .text_alignleft{
     text-align: left;
 }
+.text_aligncenter{
+    text-align: center;
+}
 .trustees_logosWrap{
     display: flex;
     width: 40%;
@@ -594,8 +608,8 @@ button:hover .icon1, button .icon2{
 }
 .leaf_container{
     position: absolute;
-    top: -50px;
-    right: -100px;
+    top: -30px;
+    right: -150px;
     transform: rotate(42deg);
     transition: all 200ms ease-in;
     animation: rotate-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -624,10 +638,11 @@ button:hover .icon1, button .icon2{
     z-index: 4;
     min-height: 100vh;
     justify-content: flex-start;
+    margin-bottom: 100px;
 }
 .leaf1Parent:hover .leaf_container{
-    right: -50px;
-    top: 0;
+    right: -100px;
+    top: -10px;
     overflow: visible;
 }
 .leaf1Parent .flex_column{
@@ -641,4 +656,123 @@ button:hover .icon1, button .icon2{
     align-self: flex-end;
     width: fit-content;
     margin: 22px 0;
+}
+.p1_section5{
+    z-index: 5;
+}
+.heading_padding{
+    padding: 0 32px;
+    box-sizing: border-box;
+}
+.mini_title{
+    margin-top: 20px;
+}
+.filters_flex1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+}
+.filter_tag1{
+    display: flex;
+    padding: 9px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 138px;
+    box-sizing: border-box;
+    color: var(--mainaccent, #134205);
+    background: var(--extremewhite, #FAF7F2);
+    border-radius: 43px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 200ms ease-in-out;
+
+}
+.filter_tag1 img{
+    height: 36px;
+    width: auto;
+    transition: all 200ms ease-in-out;
+}
+.filter_tag1:hover {
+    background: var(--mainaccent);
+    color: var(--extremewhite);
+}
+.filter_tag1:hover img{
+    transform: rotate(180deg);
+}
+.products_flex{
+    display: flex;
+    gap: 40px;
+}
+.space1{
+    width: 100%;
+    height: 60px;
+}
+.product_card{
+    position: relative;
+    display: flex;
+    min-width: 348px;
+    padding: 34px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 36px;
+    transition: all 200ms ease-in-out;
+}
+.button5{
+    padding: 8px 26px;
+}
+.button5 img{
+    width: 28px;
+    height: auto;
+}
+.button5:hover{
+    padding: 8px 30px;
+}
+.product_card .mini_product_viewer{
+    padding: 0;
+    width: 100%;
+    height: 148px;
+    position: relative;
+}
+.rating_flex{
+    display: flex;
+    align-items: center;
+    margin: 6x 0 0 0;
+}
+.rating_flex img{
+    height: 28px;
+    width: auto;
+}
+.rating_flex h6{
+    color: var(--grey, #999);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 4px;
+}
+.button_container3{
+    height: 50px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 4px;
+}
+.tag3d{
+    position: absolute;
+    right: 44px;
+    height: 32px;
+    width: 32px;
+    background-image: url(public/images/3dbadge.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 44px;
+    z-index: 3;
+}
+.product_card:hover{
+    box-shadow: 0 4px 20px 0 rgba(6, 46, 15, 0.194);
 }

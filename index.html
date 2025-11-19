@@ -206,10 +206,10 @@ Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.<
       camera-controls
       auto-rotate
       disable-zoom
+      disable-tap
       field-of-view="16deg"
         camera-orbit="calc(10.5rad + env(window-scroll-y) * 10rad) calc(180deg - env(window-scroll-y) * 180deg) calc(10m - env(window-scroll-y) * 2m)">
   </model-viewer>
-
         </div>
         <div class="flex_column">
             <div class="heading_text_block scroll_animate focus_in">
@@ -225,6 +225,137 @@ Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.<
                 <div class="button_container2"><button class="button2 main_button">About Us <div><img src="public/images/arrowgreen.svg"> </div></button></div>
         </div>
      </section>
+     <!-- SECTION5 -->
+     <section class="container p1_section5 offwhite_bg sticky">
+        <div class="blurred_separator blurred_separator2 separator_top offwhite_bg">
+        <span></span>
+    </div>
+        <span class="greenBg blur_size1 hero_blur2"></span>
+        <div class="flex_column heading_padding">
+            <div class="heading_text_block scroll_animate2 focus_in">
+               <h2 class="text_aligncenter arabic_font">
+تجربة حياة للتسوق الذكي               
+                </h2>
+                <h3 class="text_aligncenter">
+                    The Hayat Smart Shopping Experience
+                </h3>
+                <h4 class="text_aligncenter text_light mini_title"> Explore <b>every detail</b>  of our different produce in 3D</h4>
+                <div class="filters_flex1">
+                    <button class="filter_tag1"><img src="public/images/winter.svg">Winter</button>
+                    <button class="filter_tag1"><img src="public/images/spring.svg">Spring</button>
+                    <button class="filter_tag1"><img src="public/images/autumn.svg">Autumn</button>
+                    <button class="filter_tag1"><img src="public/images/summer.svg">Summer</button>
+                </div>
+            </div>
+            <span class="space1"></span>
+            <div class="products_flex">
+                <!-- 1 -->
+                <div class="mini_productcard product_card move_focus scroll_animate">
+                     <span class="tag3d"></span>
+                <!-- CABBAGE MODEL -->
+                <model-viewer class="mini_product_viewer" poster="public\models\cabbage_poster.png"  src="public/models/savoy_cabbage.glb" src="public/models/Savoy_Cabbage.usdz"  camera-controls 
+                tone-mapping="neutral"
+                shadow-intensity="1" exposure="1" 
+                camera-orbit="153.4deg 38.32deg 26.92m" 
+                field-of-view="30deg" 
+                auto-rotate 
+                disable-zoom>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer>
+                <h3 class="h3_2 text_extraBold text_uppercase">Cabbage loaf</h3>
+                <div class="rating_flex">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <h6>220 Reviews</h6>
+                </div>
+                <div class="text_buttonFlex">
+                    <h4 class="h4_2 text_semibold">View Item</h4>
+                    <div class="button_container3">
+                        <button class="button2 button3 button5">
+                            <img class="icon1" src="public/images/arrowwhite.svg"> 
+                            <img class="icon2" src="public/images/arrowgreen.svg">
+                         </button>
+                    </div>
+                </div>
+                </div>
+                <!-- 2 -->
+                 <div class="mini_productcard product_card move_focus scroll_animate">
+                     <span class="tag3d"></span>
+                <!-- MELON MODEL -->
+                <model-viewer class="mini_product_viewer" src="public/models/melon.glb" src="public/models/Melon.usdz"  camera-controls 
+                tone-mapping="neutral"
+                shadow-intensity="1" exposure="1" 
+                camera-orbit="153.4deg 38.32deg 26.92m" 
+                field-of-view="30deg" 
+                auto-rotate 
+                disable-zoom>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer>
+                <h3 class="h3_2 text_extraBold text_uppercase">Green melon</h3>
+                <div class="rating_flex">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <h6>220 Reviews</h6>
+                </div>
+                <div class="text_buttonFlex">
+                    <h4 class="h4_2 text_semibold">View Item</h4>
+                    <div class="button_container3">
+                        <button class="button2 button3 button5">
+                            <img class="icon1" src="public/images/arrowwhite.svg"> 
+                            <img class="icon2" src="public/images/arrowgreen.svg">
+                         </button>
+                    </div>
+                </div>
+                </div>
+                <!-- 3 -->
+                 <div class="mini_productcard product_card move_focus scroll_animate">
+                    <span class="tag3d"></span>
+                <!-- CABBAGE MODEL -->
+                <model-viewer class="mini_product_viewer"  src="public/models/cucumbers.glb" camera-controls 
+                tone-mapping="neutral"
+                shadow-intensity="1" exposure="1" 
+                camera-orbit="153.4deg 38.32deg 26.92m" 
+                field-of-view="30deg" 
+                auto-rotate 
+                disable-zoom>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer>
+                <h3 class="h3_2 text_extraBold text_uppercase">cucumbers</h3>
+                <div class="rating_flex">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <h6>220 Reviews</h6>
+                </div>
+                <div class="text_buttonFlex">
+                    <h4 class="h4_2 text_semibold">View Item</h4>
+                    <div class="button_container3">
+                        <button class="button2 button3 button5">
+                            <img class="icon1" src="public/images/arrowwhite.svg"> 
+                            <img class="icon2" src="public/images/arrowgreen.svg">
+                         </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="button_container2"><button class="button2 main_button">View All Products <div><img src="public/images/arrowgreen.svg"> </div></button></div>
+        </div>
+     </section>
+     
     <!-- MODELVIEWERLIBRARY-->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <script src="script.js"></script>
