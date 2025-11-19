@@ -38,12 +38,12 @@
             <div class="mini_productcard">
                 <!-- CABBAGE MODEL -->
                  <h5 class="text_extraBold text_uppercase">Top product</h5>
-                <model-viewer class="mini_product_viewer " src="public/models/savoy_cabbage.glb" src="public/models/Savoy_Cabbage.usdz"  camera-controls 
-                tone-mapping="neutral" poster="poster.webp" 
+                <model-viewer class="mini_product_viewer" poster="public\models\cabbage_poster.png"  src="public/models/savoy_cabbage.glb" src="public/models/Savoy_Cabbage.usdz"  camera-controls 
+                tone-mapping="neutral"
                 shadow-intensity="1" exposure="1" 
                 camera-orbit="153.4deg 38.32deg 26.92m" 
                 field-of-view="30deg" 
-                auto-rotate poster="public\models\cabbage_poster.png" 
+                auto-rotate 
                 disable-zoom>
                     <div class="progress-bar hide" slot="progress-bar">
                         <div class="update-bar"></div>
@@ -75,9 +75,9 @@
             <h1>مـــــزارع حيـــــاة</h1>
         </div>
         <!-- HEROTREEMODEL -->
-        <model-viewer class="hero_model scroll_animate" 
+        <model-viewer class="hero_model scroll_animate2" 
+            poster = "poster.webp"
             src="public/models/bonsai.glb"
-            ar ar-modes="webxr scene-viewer quick-look"
             camera-controls
             tone-mapping="neutral"
             poster="poster.webp"
@@ -104,7 +104,7 @@
     </div>
     </section>
     <!-- OFFERSSECTION -->
-    <section class="p1_section2">
+    <section class="p1_section2 sticky">
         <div class="blurred_separator blurred_separator2 separator_top mintgreen_bg">
         <span></span>
     </div>
@@ -155,6 +155,76 @@
             </div>
         </div>
     </section>
+    <!-- SECTION3 -->
+     <section class="container p1_section3 offwhite_bg sticky">
+        <div class="blurred_separator blurred_separator2 separator_top offwhite_bg">
+        <span></span>
+    </div>
+        <span class="greenBg blur_size1 hero_blur2"></span>
+        <div class="trustees_logosWrap">
+            <!-- 1 -->
+            <div class="trustees_logo_container">
+                <img src="public/images/logotrust01.svg" alt="">
+            </div>
+            <!-- 2 -->
+             <div class="trustees_logo_container">
+                <img src="public/images/logotrust02.svg" alt="">
+            </div>
+            <!-- 3 -->
+             <div class="trustees_logo_container">
+                <img src="public/images/logotrust03.svg" alt="">
+            </div>
+            <!-- 4 -->
+             <div class="trustees_logo_container">
+                <img src="public/images/logotrust04.svg" alt="">
+            </div>
+        </div>
+        <div class="flex_column">
+            <div class="heading_text_block scroll_animate focus_in">
+               <h2 class="text_alignleft arabic_font">
+                ثقة وأمان
+               </h2>
+                <h3>
+                    Trust & Reliability
+                </h3>
+            </div>
+            <p>From local farms to your table — Hayat began with a simple belief: that transparency builds trust and reliability of cosutmers. From local farms to your table — Hayat began with a simple belief: that transparency builds trust and reliability of cosutmers.
+Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.</p>
+        </div>
+     </section>
+     <!-- SECTION4 -->
+     <section id="leafParent" class="container offwhite_bg sticky leaf1Parent">
+        <div class="blurred_separator blurred_separator2 separator_top offwhite_bg">
+        <span></span>
+    </div>
+        <span class="greenBg blur_size1 hero_blur2"></span>
+        <div class="leaf_container scroll_animate">
+                    <model-viewer class="p1_leaf1 scroll_animate"
+      id="leafModel"
+      src="public/models/leaf.glb"
+      ios-src="public/models/Leaf.usdz"
+      camera-controls
+      auto-rotate
+      disable-zoom
+      field-of-view="16deg"
+        camera-orbit="calc(10.5rad + env(window-scroll-y) * 10rad) calc(180deg - env(window-scroll-y) * 180deg) calc(10m - env(window-scroll-y) * 2m)">
+  </model-viewer>
+
+        </div>
+        <div class="flex_column">
+            <div class="heading_text_block scroll_animate focus_in">
+               <h2 class="text_alignleft arabic_font">
+                 قصتنا
+               </h2>
+                <h3>
+                    Our Story
+                </h3>
+            </div>
+            <p class="focus_in scroll_animate2" >From local farms to your table — Hayat began with a simple belief: that transparency builds trust and reliability of cosutmers. From local farms to your table — Hayat began with a simple belief: that transparency builds trust and reliability of cosutmers.
+Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.</p>
+                <div class="button_container2"><button class="button2 main_button">About Us <div><img src="public/images/arrowgreen.svg"> </div></button></div>
+        </div>
+     </section>
     <!-- MODELVIEWERLIBRARY-->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <script src="script.js"></script>

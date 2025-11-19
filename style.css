@@ -13,6 +13,9 @@
     font-family: "The Year of The Camel";
     src: url('public/fonts/alfont_com_TheYearofTheCamel-Medium.otf');
 }
+.arabic_font{
+    font-family: "The Year of The Camel";
+}
 *{
     margin: 0;
     padding: 0;
@@ -124,6 +127,11 @@ h1{
     font-weight: 300;
     line-height: normal;
 }
+p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+}
 .text_light{
     font-weight: 300;
 }
@@ -204,8 +212,12 @@ button{
  color: var(--mainaccent2);
 }
 model-viewer {
-margin: 0 auto;
-overflow: visible;
+    margin: 0 auto;
+    overflow: visible;
+    transition-duration: 1000ms;
+}
+model-viewer::part(default-progress-bar) {
+    display: none;
 }
 .hero_model{
     width: 800px;
@@ -366,7 +378,7 @@ button:hover .icon1, button .icon2{
     align-items: center;
     gap: 20px;
     bottom: 100px;
-    font-size: 24px;
+    font-size: 20px;
     box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.40);
     border-radius: 100px;
 }
@@ -393,11 +405,17 @@ button:hover .icon1, button .icon2{
     height: auto;
     transition: all 200ms ease-in-out;
 }
-.scroll_animate{
+.scroll_animate2{
     view-timeline: --scroll-tl;
     animation-timeline: --scroll-tl;
     animation-delay: cover 10%;
     animation-range: cover 10% cover 35%;
+}
+.scroll_animate{
+    view-timeline: --scroll-tl;
+    animation-timeline: --scroll-tl;
+    animation-delay: cover 10%;
+    animation-range: cover 10% cover 15%;
 }
 .hero_stats{
     display: flex;
@@ -434,24 +452,28 @@ button:hover .icon1, button .icon2{
 .sticky{
     position: sticky;
     top: 0;
+    min-height: 100vh;
 }
 .p1_section2{
     background-image: url(public/images/p1sec2bg.jpg);
     background-position: center;
-    /* background-repeat: no-repeat; */
     position: sticky;
-    z-index: 1;
     padding: 40px 0 0 0;
     width: 100%;
     background-size: cover;
     box-sizing: border-box;
 }
+.p1_section3{
+    position: sticky;
+    z-index: 4;
+}
 .p1_section2Flex{
     display: flex;
-    height: 300px; 
+    min-height: 300px; 
     justify-content: space-between;
     align-items: flex-start;
     gap: 22px;
+    z-index: 9;
 }
 .offers_card{
     display: flex;
@@ -501,6 +523,7 @@ button:hover .icon1, button .icon2{
 }
 .p1_hero{
     position: sticky;
+    min-height: 100vh;
 }
 .mintgreen_bg{
     background: var(--blur1color)
@@ -525,7 +548,7 @@ button:hover .icon1, button .icon2{
 }
 .learn_more img{
     width: 20px;
-height: 20px;
+    height: 20px;
 }
 .offers_card:hover .learn_more{
     height: 30px;
@@ -533,8 +556,89 @@ height: 20px;
 }
 .offers_card:hover{
     border: 0.5px solid var(--extremewhite);
-
-background: linear-gradient(198deg, rgba(255, 255, 255, 0.57) 31.36%, rgba(196, 215, 191, 0.57) 87.48%);
-
-box-shadow: -3px 8px 20px 0 rgba(235, 240, 235, 0.50);
+    background: linear-gradient(198deg, rgba(255, 255, 255, 0.57) 31.36%, rgba(196, 215, 191, 0.57) 87.48%);
+    box-shadow: -3px 8px 20px 0 rgba(235, 240, 235, 0.50);
+}
+.heading_text_block{
+    gap: 0;
+    margin-bottom: 32px;
+}
+.text_alignleft{
+    text-align: left;
+}
+.trustees_logosWrap{
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    min-width: 276px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 22px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+.trustees_logo_container{
+    display: flex;
+    width: 100%;
+    height: 180px;
+    max-width: 180px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: var(--extremewhite);
+    border-radius: 22px;
+}
+.trsustees_logo_container img{
+    width: 105px;
+}
+.leaf_container{
+    position: absolute;
+    top: -50px;
+    right: -100px;
+    transform: rotate(42deg);
+    transition: all 200ms ease-in;
+    animation: rotate-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    z-index: 2;
+}
+.p1_leaf1{
+    width: 716px;
+    height: 716px;
+}
+/* @keyframes rotate-in {
+    from{
+        top: -50px;
+        right: 100px;
+        transform: rotate(42deg);
+    }
+    to{
+        opacity: 1;
+        filter: blur(0px);
+        transform: rotate(0);
+        top: 0px;
+        right: 0px;
+    }
+} */
+.leaf1Parent{
+    position: sticky;
+    z-index: 4;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+.leaf1Parent:hover .leaf_container{
+    right: -50px;
+    top: 0;
+    overflow: visible;
+}
+.leaf1Parent .flex_column{
+    width: 60%;
+    align-self: flex-start;
+}
+.leaf1Parent .flex_column .main_buttoncontainer{
+    height: fit-content;
+}
+.button_container2{
+    align-self: flex-end;
+    width: fit-content;
+    margin: 22px 0;
 }
