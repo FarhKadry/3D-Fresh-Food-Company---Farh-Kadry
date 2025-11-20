@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     </head>
     <body>
     <header>
@@ -35,7 +36,7 @@
         <span class="greenBg blur_size1 hero_blur2"></span>
         <div class="hero_content">
             <!-- TOP LEFT CARD -->
-            <div class="mini_productcard">
+            <div class="mini_productcard move_focus">
                 <!-- CABBAGE MODEL -->
                  <h5 class="text_extraBold text_uppercase">Top product</h5>
                 <model-viewer class="mini_product_viewer" poster="public\models\cabbage_poster.png"  src="public/models/savoy_cabbage.glb" src="public/models/Savoy_Cabbage.usdz"  camera-controls 
@@ -60,7 +61,7 @@
                 </div>
                 </div>
                 <!-- STATS -->
-                <div class="hero_stats scroll_animate focus_in">
+                <div class="hero_stats move_focus">
                     <div>
                         <h2>127+</h2>
                         <h4 class="text_regular">Organic Crops</h4>
@@ -70,7 +71,7 @@
                         <h4 class="text_regular">Original Produce</h4>
                     </div>
                 </div>
-        <div class="flex_column focus_in scroll_animate">
+        <div class="flex_column focus_in">
             <h3 class="text_regular">EVOLVE . <b>GROW .</b> CREATE REALITY</h3>
             <h1>مـــــزارع حيـــــاة</h1>
         </div>
@@ -426,6 +427,48 @@ Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.<
                 </model-viewer>
         </div>
      </section>
+     <footer>
+            <div class="container">
+                <div class="footer_container">
+                    <!-- 1 -->
+                    <div class="flex_column list1">
+                    <img class="logo" src="public/images/logo3.svg">
+                    <h6 class="text_light">Bringing transparency and innovation to organic farming through cutting-edge 3D visualization technology.</h6>
+                    <h6 class="arabic_font text_light">نحن نجلب الشفافية والابتكار للزراعة العضوية من خلال تقنية التصور ثلاثي الأبعاد المتطورة.</h6>
+                </div>
+                <!-- 2 -->
+                 <ul class="flex_column list2">
+                    <h4 class="h4_2 text_bold">Quick Links</h4>
+                    <li>
+                        <a href="#"><h6 class="text_regular">Home</h6></a>
+                    </li>
+                    <li>
+                        <a href="#"><h6 class="text_regular">Products</h6></a>
+                    </li>
+                    <li>
+                        <a href="#"><h6 class="text_regular">About</h6></a>
+                    </li>
+                     <li>
+                        <a href="#"><h6 class="text_regular">Contact</h6></a>
+                    </li>
+                 </ul>
+                 <div class="flex_column list3">
+                    <a href="#" class="visitus">Visit Us <img src="public/images/visitusarrow.svg"></a>
+                    <ul class="flex_column list2">
+                    <h4 class="h4_2 text_bold">Connect</h4>
+                    <div class="socials_flex">
+                        <a class="icon_size1" href="#"><img src="public/images/socialmedia01.svg" alt=""></a>
+                        <a class="icon_size1" href="#"><img src="public/images/socialmedia02.svg" alt=""></a>
+                        <a class="icon_size1" href="#"><img src="public/images/socialmedia03.svg" alt=""></a>
+                    </div>
+                 </ul>
+                 </div>
+                </div>
+                <div class="credits"><h6>© 2025 Hayat Farms. All rights reserved.</h6>
+                     <h6 class="arabic_font">مزارع حياة © 2025</h6>
+                    </div>
+            </div>
+        </footer>
     <!-- MODELVIEWERLIBRARY-->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <script src="script.js"></script>
