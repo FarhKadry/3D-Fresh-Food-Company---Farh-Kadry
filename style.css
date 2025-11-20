@@ -501,7 +501,7 @@ button:hover .icon1, button .icon2{
 }
 .p1_section2Flex{
     display: flex;
-    min-height: 300px; 
+    max-height: 300px; 
     justify-content: space-between;
     align-items: flex-start;
     gap: 22px;
@@ -624,8 +624,9 @@ button:hover .icon1, button .icon2{
     background: var(--extremewhite);
     border-radius: 22px;
 }
-.trsustees_logo_container img{
+.trustees_logo_container img{
     width: 105px;
+    height: auto;
 }
 .leaf_container{
     position: absolute;

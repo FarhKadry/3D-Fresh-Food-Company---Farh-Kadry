@@ -1,10 +1,10 @@
 @media (min-width: 0) and (max-width: 700px){
-    .difference_right {
-    display: flex;
-    right: 52px;
-    top: -107px;
-    height: 0;
-}
+        .difference_right {
+        display: flex;
+        right: -4px;
+        top: -44px;
+        height: 0;
+    }
 .difference_left {
     display: flex;
     left: 32px;
@@ -16,9 +16,9 @@
     top: 228px;
 }
 .difference_moved1 {
-    top: 331px;
-    position: relative;
-    right: -80px;
+    top: 270px;
+        position: relative;
+        right: -4px;
 }
 
     .taro_model_bg {
@@ -82,7 +82,7 @@ h1 {
     font-size: 64px;
 }
 h3 {
-    font-size: 24px;
+    font-size: 32px;
 }
 h4{
     font-size: 20px;
@@ -133,8 +133,8 @@ p{
     height: 25px;
 }
 .taro_model {
-width: 103px;
-height: 181px;
+width: 203px;
+height: 281px;
 }
 .footer_container {
     display: flex;
@@ -166,18 +166,20 @@ header ul{
 }
 .p1_section2Flex {
     display: flex;
-    min-height: 300px;
+    max-height: unset;
     justify-content: space-between;
     align-items: flex-start;
     gap: 22px;
     z-index: 9;
 }
 .offers_card{
-    max-width: 100%;
+    max-width: 80%;
+    align-self: center;
 }
 .p1_section2Flex {
     margin-bottom: 500px;
     flex-wrap: wrap;
+            justify-content: center;
 }
 .offers_card_position2 {
     margin-top: 30px;
@@ -220,10 +222,21 @@ footer .list1{
 .button5:hover{
     padding: 8px 30px;
 }
-
 .trustees_logosWrap {
-    width: 100%;
-    min-width: 276px;
+        width: 100%;
+        min-width: unset;
+        flex-wrap: nowrap;
+        flex-direction: unset;
+        overflow-x: scroll;
+    }
+    .trustees_logo_container {
+        width: 100%;
+        height: 200px;
+        max-width: 200px;
+        margin: 20px 0;
+    }
+    .trustees_logo_container img{
+    width: 80px;
 }
 .p1_section3{
     flex-direction: column-reverse;
@@ -390,14 +403,14 @@ header ul{
 }
 .p1_section2Flex {
     display: flex;
-    min-height: 300px;
+    max-height: 500px;
     justify-content: space-between;
     align-items: flex-start;
     gap: 22px;
     z-index: 9;
 }
 .offers_card{
-        max-width: 45%;
+        max-width: 48%;
 }
 .p1_section2Flex {
     margin-bottom: 500px;
@@ -459,9 +472,21 @@ footer .list1{
 .button5:hover{
     padding: 8px 30px;
 }
-.trustees_logosWrap {
-    width: 100%;
-    min-width: 276px;
+    .trustees_logosWrap {
+        width: 100%;
+        min-width: unset;
+        flex-wrap: nowrap;
+        flex-direction: unset;
+        overflow-x: scroll;
+    }
+    .trustees_logo_container {
+        width: 100%;
+        height: 180px;
+        max-width: 200px;
+        margin: 20px 0;
+    }
+.trustees_logo_container img{
+    width: 105px;
 }
 .p1_section3{
     flex-direction: column-reverse;
@@ -474,6 +499,7 @@ footer .list1{
     justify-content: flex-start;
     margin-bottom: 208px;
 }
+
 }
 
 /* DESKTOP */
@@ -668,6 +694,8 @@ footer .list1{
 .trustees_logosWrap {
     width: 40%;
     min-width: 276px;
+    flex-wrap: wrap;
+    flex-direction: unset;
 }
 .p1_section3{
     flex-direction: row;
@@ -685,4 +713,16 @@ footer .list1{
     justify-content: flex-start;
     margin-bottom: 208px;
 }
+.trustees_logo_container {
+    width: 100%;
+    height: 180px;
+    max-width: 180px;
+}
+.trustees_logo_container img{
+    width: 105px;
+}
+.blurred_separator {
+    height: 300px;
+}
+
 }

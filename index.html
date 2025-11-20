@@ -116,43 +116,8 @@
         </h3>
         <h4 class="text_regular">Explore every detail of our produce in 3D</h4>
     </div>
-            <div class="p1_section2Flex">
-                <!-- 1 -->
-                <div class="offers_card move_focus scroll_animate">
-                    <div class="title">
-                        <img src="public/images/recycle.svg">
-                        <h4 class="text_bold h4_2">Recyclable Packaging</h4>
-                        <p class="text_regular">Track every step from farm to your doorstep</p>
-                        <button class="learn_more">Learn more <img src="public/images/arrowgreen.svg" alt=""></button>
-                    </div>
-                </div>
-                <!-- 2 -->
-                 <div class="offers_card move_focus scroll_animate offers_card_position2">
-                    <div class="title">
-                        <img src="public/images/electricity.svg">
-                        <h4 class="text_bold h4_2">Transparent Supply Chain</h4>
-                         <p class="text_regular">Track every step from farm to your doorstep</p>
-                        <button class="learn_more">Learn more <img src="public/images/arrowgreen.svg" alt=""></button>
-                    </div>
-                </div>
-                <!-- 3 -->
-                 <div class="offers_card move_focus scroll_animate">
-                    <div class="title">
-                        <img src="public/images/recycle.svg">
-                        <h4 class="text_bold h4_2">Recyclable Packaging</h4>
-                        <p class="text_regular">Track every step from farm to your doorstep</p>
-                        <button class="learn_more">Learn more <img src="public/images/arrowgreen.svg" alt=""></button>
-                    </div>
-                </div>
-                <!-- 4 -->
-                 <div class="offers_card  move_focus scroll_animate offers_card_position2">
-                    <div class="title">
-                        <img src="public/images/sun.svg">
-                        <h4 class="text_bold h4_2">Natural Sunlight</h4>
-                         <p class="text_regular">Track every step from farm to your doorstep</p>
-                        <button class="learn_more">Learn more <img src="public/images/arrowgreen.svg" alt=""></button>
-                    </div>
-                </div>
+            <div id="cardsContainer1" class="p1_section2Flex">
+               
             </div>
         </div>
     </section>
@@ -402,6 +367,7 @@ Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.<
         <span></span>
     </div>
         <span class="greenBg blur_size1 hero_blur2"></span>
+        <!-- ARSTART -->
         <div class="flex_column">
             <div class="heading_text_block scroll_animate2 focus_in">
                <h2 class="text_alignleft arabic_font">
@@ -410,22 +376,34 @@ Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.<
                     Be Part of the Growth
                 </h3>
                 <p>Join the Hayat Family and experience the future of organic farming. Connect with local farmers, explore produce in augmented reality, and be part of a sustainable food revolution.</p>   
-            <div class="button_container2"><button class="button2 main_button">Experience in AR <div><img src="public/images/arrowgreen.svg"> </div></button></div>
+            <div class="button_container2">
+               <button id="arButton1" class="button2 main_button">
+    Experience in AR 
+    <div><img src="public/images/arrowgreen.svg"></div>
+</button>
+        </div>
             </div>
         </div>
         <div class="ar_phoneBg">
-            <model-viewer class="mini_product_viewer scroll_animate move_focus" poster="public\models\cabbage_poster.png"  src="public/models/savoy_cabbage.glb" src="public/models/Savoy_Cabbage.usdz"  camera-controls 
-                tone-mapping="neutral"
-                shadow-intensity="1" exposure="1" 
-                camera-orbit="153.4deg 38.32deg 26.92m" 
-                field-of-view="30deg" 
-                auto-rotate 
-                disable-zoom>
-                    <div class="progress-bar hide" slot="progress-bar">
-                        <div class="update-bar"></div>
-                    </div>
-                </model-viewer>
+            <model-viewer 
+            id="productModel1"
+    class="mini_product_viewer scroll_animate move_focus"
+    poster="public/models/cabbage_poster.png"
+    src="public/models/savoy_cabbage.glb"
+    ios-src="public/models/Savoy_Cabbage.usdz"
+    camera-controls
+    tone-mapping="neutral"
+    shadow-intensity="1" 
+    exposure="1"
+    camera-orbit="153.4deg 38.32deg 26.92m"
+    field-of-view="30deg" 
+    auto-rotate
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    ar-placement="floor"
+    disable-zoom>
         </div>
+        <!-- END -->
      </section>
      <footer>
             <div class="container">
