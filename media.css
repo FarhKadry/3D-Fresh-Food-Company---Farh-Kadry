@@ -1,4 +1,40 @@
 @media (min-width: 0) and (max-width: 700px){
+    .difference_right {
+    display: flex;
+    right: 52px;
+    top: -107px;
+    height: 0;
+}
+.difference_left {
+    display: flex;
+    left: 32px;
+    top: 2px;
+    height: 24px;
+}
+    .difference_left .difference_moved1 {
+    right: 11px;
+    top: 228px;
+}
+.difference_moved1 {
+    top: 331px;
+    position: relative;
+    right: -80px;
+}
+
+    .taro_model_bg {
+        width: 345px;
+        height: 250px;
+        padding: 96px 12px;
+        margin: 100px auto;
+    }
+    .difference_content {
+    display: flex;
+    width: 149px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+}
 .p1_section2 .container{
     gap: 22px;
     flex-direction: column;
@@ -8,12 +44,21 @@
     bottom: unset;
     left: 0;
     z-index: 2;
+    display: none;
+}
+.button2:hover{
+    background-color: var(--extremewhite);
+    color: var(--mainaccent);
+    padding: 8px 22px;
+    border: 1px solid var(--mainaccent);
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.40);
 }
 .hero_model {
-    width: 700px;
-    height: 529px;
+    width: 100%;
+    height: 429px;
     z-index: 2;
-    top: 70px;
+    top: 0;
     position: relative;
     animation: scale-in 1200ms ease-in-out forwards;
     z-index: 1;
@@ -23,6 +68,7 @@
     bottom: unset;
     right: 12px;
     z-index: 2;
+    display: none;
 }
 .hero_stats div h2{
     font-size: 52px;
@@ -33,13 +79,22 @@
     font-size: 36px;
 }
 h1 {
-    font-size: 92px;
+    font-size: 64px;
 }
 h3 {
-    font-size: 36px;
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
 }
 .h3_2{
     font-size: 26px;
+}
+h2{
+    font-size: 48px;
+}
+p{
+    font-size: 18px;
 }
 .blur_size1{
     width: 250px;
@@ -60,7 +115,7 @@ h3 {
     gap: 40px;
 }
 .container{
-    padding: 80px 42px;
+    padding: 42px 32px;
 }
 .products_flex{
     display: flex;
@@ -72,13 +127,14 @@ h3 {
     top: unset;
     bottom: unset;
     padding: 28px;
+    display: flex;
 }
 .space1 {
     height: 25px;
 }
 .taro_model {
-    width: 303px;
-    height: 281px;
+width: 103px;
+height: 181px;
 }
 .footer_container {
     display: flex;
@@ -93,15 +149,12 @@ width: 100%;
 align-items: center;
 text-align: center;
 }
-.taro_model_bg {
-    width: 579px;
-    height: 591px
-}
+
     .visitus{
     width: fit-content;
 }
 .heading_padding{
-    padding: 0 42px;
+    padding: 0;
     box-sizing: border-box;
     width: 100%;
 }
@@ -120,7 +173,7 @@ header ul{
     z-index: 9;
 }
 .offers_card{
-        max-width: 45%;
+    max-width: 100%;
 }
 .p1_section2Flex {
     margin-bottom: 500px;
@@ -135,6 +188,53 @@ footer .list1{
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.p1_leaf1{
+    width: 436px;
+    height: 416px;
+}
+.leaf1Parent:hover .leaf_container{
+    right: -100px;
+    top: -10px;
+    overflow: visible;
+}
+.button2{
+    font-size: 16px;
+    padding: 8px 22px;
+}
+.main_button{
+    font-size: 16px;
+    padding: 0 8px 0 22px;
+}
+.p1_final{
+    flex-direction: column;
+    gap: 22px;
+}
+.button5{
+    padding: 8px 26px;
+}
+.button5 img{
+    width: 28px;
+    height: auto;
+}
+.button5:hover{
+    padding: 8px 30px;
+}
+
+.trustees_logosWrap {
+    width: 100%;
+    min-width: 276px;
+}
+.p1_section3{
+    flex-direction: column-reverse;
+    margin-bottom: 22px;
+}
+.leaf1Parent {
+    position: sticky;
+    z-index: 4;
+    min-height: 100vh;
+    justify-content: flex-start;
+    margin-bottom: 208px;
 }
 }
 
@@ -148,6 +248,8 @@ footer .list1{
     bottom: unset;
     left: 0;
     z-index: 2;
+    display: flex;
+    
 }
 .hero_model {
     width: 700px;
@@ -163,6 +265,7 @@ footer .list1{
     bottom: unset;
     right: 12px;
     z-index: 2;
+    display: flex;
 }
 .hero_stats div h2{
     font-size: 52px;
@@ -177,6 +280,15 @@ h1 {
 }
 h3 {
     font-size: 36px;
+}
+h4{
+    font-size: 20px;
+}
+h2{
+    font-size: 52px;
+}
+p{
+    font-size: 20px;
 }
 .h3_2{
     font-size: 26px;
@@ -212,6 +324,8 @@ h3 {
     top: unset;
     bottom: unset;
     padding: 28px;
+    display: flex;
+    
 }
 .space1 {
     height: 25px;
@@ -235,7 +349,30 @@ text-align: center;
 }
 .taro_model_bg {
     width: 579px;
-    height: 591px
+    height: 591px;
+    margin:unset;
+    padding: unset;
+}
+.difference_right{
+    display: flex;
+    right: -80px;
+    top: 100px;
+    height: 133px;
+}
+.difference_moved1{
+    top: 40px;
+    position: relative;
+    right: -80px;
+}
+.difference_left{
+    display: flex;
+    left: -80px;
+    top: 90px;
+    height: 133px;
+}
+.difference_left .difference_moved1{
+    right: 10px;
+    top: 100px;
 }
     .visitus{
     width: fit-content;
@@ -275,6 +412,67 @@ footer .list1{
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+.p1_leaf1{
+    width: 716px;
+    height: 716px;
+}
+.leaf1Parent:hover .leaf_container{
+    right: -100px;
+    top: -10px;
+    overflow: visible;
+}
+.button2{
+    padding: 12px 32px;
+    padding: 8px 22px;
+}
+.button2:hover{
+    background-color: var(--extremewhite);
+    color: var(--mainaccent);
+    padding: 12px 32px;
+    border: 1px solid var(--mainaccent);
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.40);
+}
+.main_button{
+    font-size: 20px;
+    padding: 0 10px 0 32px;
+}
+.main_button:hover {
+    padding: 0 10px 0 32px;
+    gap: 30px;
+    box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.40);
+}
+.button3{
+    padding: 6px 16px;
+}
+.p1_final{
+    flex-direction: row;
+}
+.button5{
+    padding: 8px 26px;
+}
+.button5 img{
+    width: 28px;
+    height: auto;
+}
+.button5:hover{
+    padding: 8px 30px;
+}
+.trustees_logosWrap {
+    width: 100%;
+    min-width: 276px;
+}
+.p1_section3{
+    flex-direction: column-reverse;
+    margin-bottom: 22px;
+}
+.leaf1Parent {
+    position: sticky;
+    z-index: 4;
+    min-height: 100vh;
+    justify-content: flex-start;
+    margin-bottom: 208px;
 }
 }
 
@@ -294,6 +492,8 @@ footer .list1{
     left: 0;
     bottom: unset;
     z-index: 1;
+    display: flex;
+    
 }
 .hero_model{
     width: 800px;
@@ -308,6 +508,8 @@ footer .list1{
     bottom: unset;
     right: 32px;
     z-index: 1;
+    display: flex;
+    
 }
 .hero_stats div h2{
     font-size: 83px;
@@ -323,7 +525,12 @@ h1 {
 h3 {
     font-size: 42px;
 }
-
+h4{
+    font-size: 24px;
+}
+p{
+    font-size: 20px;
+}
 .hero_content{
     gap: 0;
 }
@@ -355,6 +562,7 @@ h3 {
     top: unset;
     bottom: unset;
     padding: 34px;
+    display: flex;
 }
 .space1 {
     height: 60px;
@@ -366,6 +574,8 @@ h3 {
 .taro_model_bg{
     width: 610px;
     height: 623px;
+    margin: unset;
+    padding: unset;
 }
 .footer_container {
     display: flex;
@@ -397,6 +607,9 @@ header ul{
 .p1_section2Flex {
     margin: unset;
 }
+.button3{
+    padding: 6px 16px;
+}
 .offers_card{
         max-width: unset;
 }
@@ -409,5 +622,67 @@ footer .list1{
     text-align: left;
     align-items: flex-start;
     justify-content: flex-start;
+}
+.p1_final{
+    flex-direction: row;
+}
+.p1_leaf1{
+    width: 716px;
+    height: 716px;
+}
+.leaf1Parent:hover .leaf_container{
+    right: -100px;
+    top: -10px;
+    overflow: visible;
+}
+
+.button2{
+    font-size: 20px;
+    padding: 12px 32px;
+}
+.button2:hover{
+    background-color: var(--extremewhite);
+    color: var(--mainaccent);
+    padding: 12px 32px;
+    border: 1px solid var(--mainaccent);
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.40);
+}
+.button3{
+    padding: 6px 16px;
+}
+.button5{
+    padding: 8px 26px;
+}
+.button5 img{
+    width: 28px;
+    height: auto;
+}
+.button5:hover{
+    padding: 8px 30px;
+}
+.main_button{
+    font-size: 20px;
+    padding: 0 10px 0 32px;
+}
+.trustees_logosWrap {
+    width: 40%;
+    min-width: 276px;
+}
+.p1_section3{
+    flex-direction: row;
+    margin-bottom: 300px
+}
+.main_button:hover {
+    padding: 0 10px 0 32px;
+    gap: 30px;
+    box-shadow: 2px 4px 10px rgba(255, 255, 255, 0.40);
+}
+.leaf1Parent {
+    position: sticky;
+    z-index: 4;
+    min-height: 100vh;
+    justify-content: flex-start;
+    margin-bottom: 208px;
 }
 }
