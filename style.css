@@ -452,6 +452,8 @@ button:hover .icon1, button .icon2{
     right: 32px;
     min-height: 350px;
     z-index: 1;
+    top: 212px;
+    bottom: unset;
 }
 .hero_stats div{
     display: flex;
@@ -668,6 +670,7 @@ button:hover .icon1, button .icon2{
 .heading_padding{
     padding: 0 32px;
     box-sizing: border-box;
+    width: 100%;
 }
 .mini_title{
     margin-top: 20px;
@@ -710,6 +713,8 @@ button:hover .icon1, button .icon2{
 .products_flex{
     display: flex;
     gap: 40px;
+    overflow: visible;
+    max-width: 1124px;
 }
 .space1{
     width: 100%;
@@ -725,6 +730,8 @@ button:hover .icon1, button .icon2{
     gap: 14px;
     border-radius: 36px;
     transition: all 200ms ease-in-out;
+    top: unset;
+    bottom: unset;
 }
 .button5{
     padding: 8px 26px;
@@ -781,16 +788,11 @@ button:hover .icon1, button .icon2{
 .product_card:hover{
     box-shadow: 0 4px 20px 0 rgba(6, 46, 15, 0.194);
 }
-.products_flex{
-    overflow-x: hidden;
-}
-.product_flex /* width */
+/* width */
 ::-webkit-scrollbar {
-  width: 2px;
-  height: 2px;
+  width: 10px;
 }
 
-.product_flex
 ::-webkit-scrollbar-track {
   background:var(--extremewhite);
 }
@@ -877,8 +879,7 @@ footer{
     gap: 64px;
     background: var(--footer);
     position: sticky;
-    height: 100vh;
-    box-sizing: border-box;
+    min-height: 100vh;
     z-index: 10;
     
 }
@@ -902,6 +903,7 @@ footer .container{
 footer .list1{
     gap: 21px;
     max-width:  455px;
+    text-align: left;
 }
 .credits{
     display: flex;
