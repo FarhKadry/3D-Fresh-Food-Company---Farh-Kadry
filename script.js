@@ -41,4 +41,14 @@ cards.forEach(card => {
   `;
 });
 
+// ARPAGE1
+const arButton1 = document.getElementById("arButton1");
+const productModel1 = document.getElementById("productModel1");
 
+arButton1.addEventListener("click", () => {
+  if (productModel1.activateAR) {
+    productModel1.activateAR();
+  } else {
+    alert("AR is not supported on this device.");
+  }
+});
