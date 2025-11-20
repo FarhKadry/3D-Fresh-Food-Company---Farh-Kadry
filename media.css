@@ -6,7 +6,64 @@
     gap: 22px;
     flex-direction: column;
 }
+.mini_productcard{
+    top: 212px;
+    bottom: unset;
+    left: 0;
+    z-index: 2;
 }
+.hero_model {
+    width: 700px;
+    height: 529px;
+    z-index: 2;
+    top: 70px;
+    position: relative;
+    animation: scale-in 1200ms ease-in-out forwards;
+    z-index: 1;
+}
+.hero_stats{
+    top: 212px;
+    bottom: unset;
+    right: 12px;
+    z-index: 2;
+}
+.hero_stats div h2{
+    font-size: 52px;
+    font-weight: 470;
+    text-wrap: nowrap;
+}
+.hero_stats div h2 span{
+    font-size: 36px;
+}
+h1 {
+    font-size: 92px;
+}
+h3 {
+    font-size: 36px;
+}
+.blur_size1{
+    width: 250px;
+    height: 250px;
+}
+.hero_blur1{
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.hero_blur2{
+    right: -100px;
+    bottom: 50px;
+    height: 400px;
+    z-index: 2;
+}
+.hero_content{
+    gap: 40px;
+}
+.container{
+    padding: 80px 42px;
+}
+}
+/* DESKTOP */
 @media (min-width: 1041px){
 .p1_section2 .container{
     gap: 22px;
@@ -16,5 +73,69 @@
     padding: 40px 0 0 0;
     width: 100%;
     margin-bottom: 400px;
+}
+.mini_productcard{
+    top: 0;
+    left: 0;
+    bottom: unset;
+    z-index: 1;
+}
+.hero_model{
+    width: 800px;
+    height: 629px;
+    z-index: 2;
+    position: relative;
+    top: 0;
+    animation: scale-in 1200ms ease-in-out forwards;
+}
+.hero_stats{
+    top: unset;
+    bottom: 0;
+    right: 32px;
+    z-index: 1;
+}
+.hero_stats div h2{
+    font-size: 83px;
+    font-weight: 470;
+    text-wrap: nowrap;
+}
+.hero_stats div h2 span{
+    font-size: 48px;
+}
+h1 {
+    font-size: 111px;
+}
+h3 {
+    font-size: 42px;
+}
+.hero_stats{
+    top: 0;
+    right: 32px;
+    z-index: 2;
+    bottom: unset;
+}
+.hero_content{
+    gap: 0;
+}
+.blur_size1{
+    width: 550px;
+    height: 550px;
+}
+.hero_blur1{
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.hero_blur2{
+    right: -400px;
+    bottom: 200px;
+    height: 600px;
+    z-index: 2;
+}
+.container{
+    padding: 120px 72px;
+}
+.products_flex{
+    overflow-x: scroll;
 }
 }
