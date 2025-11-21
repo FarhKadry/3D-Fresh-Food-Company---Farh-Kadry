@@ -16,22 +16,22 @@
         <div class="header_container">
             <img class="logo1" src="public/images/logo1.svg">
             <nav>
-                <ul>
+               <ul>
                     <li>
-                        <a class="inactive" href="#">home</a>
+                        <a class="inactive" href="index.html">home</a>
                     </li>
                     <li>
-                        <a class="activelink" href="#">About</a>
+                        <a  class="activelink" href="about.html">About</a>
                     </li>
                     <li>
-                        <a class="activelink" href="#">products</a>
+                        <a class="activelink" href="products.html">products</a>
                     </li>
                 </ul>
             </nav>
             <div class="logo1"><button class="button2">Sign Up</button></div>
         </div>
     </header>
-    <section class="p1_hero container">
+    <main><section class="p1_hero container">
         <span class="greenBg blur_size1 hero_blur1"></span>
         <span class="greenBg blur_size1 hero_blur2"></span>
         <div class="hero_content">
@@ -336,7 +336,7 @@ Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.<
                     What differentiates our products?
                 </h3>   
             </div>
-            <div class="taro_model_bg">
+            <div class="taro_model_bg focus_in scroll_animate">
                  <div class="difference_content difference_left">
                     <div class="flex_column move_focus scroll_animate2">
                         <h4>Transparent Origins</h4>
@@ -347,7 +347,7 @@ Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.<
                     <p>Every product tells its full farm-to-table story.</p>
                     </div>
                  </div>
-                 <model-viewer class="taro_model" src="public/models/taro_satoimo_3d_scan.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.79" camera-orbit="483.1deg 141.6deg 0.1333m" field-of-view="30deg" auto-rotate disable-zoom disable-tap> </model-viewer>
+                 <model-viewer class="taro_model move_focus scroll_animate2" src="public/models/taro_satoimo_3d_scan.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.79" camera-orbit="483.1deg 141.6deg 0.1333m" field-of-view="30deg" auto-rotate disable-zoom disable-tap> </model-viewer>
                  <div class="difference_content difference_right">
                     <div class="flex_column move_focus scroll_animate2">
                         <h4>Transparent Origins</h4>
@@ -387,26 +387,26 @@ Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.<
         <div class="ar_phoneBg">
             <model-viewer 
             id="productModel1"
-    class="mini_product_viewer scroll_animate move_focus"
-    poster="public/models/cabbage_poster.png"
-    src="public/models/savoy_cabbage.glb"
-    ios-src="public/models/Savoy_Cabbage.usdz"
-    camera-controls
-    tone-mapping="neutral"
-    shadow-intensity="1" 
-    exposure="1"
-    camera-orbit="153.4deg 38.32deg 26.92m"
-    field-of-view="30deg" 
-    auto-rotate
-    ar
-    ar-modes="webxr scene-viewer quick-look"
-    ar-placement="floor"
-    exposure="1.2"
-    shadow-intensity="1.2"
-    disable-zoom>
+            class="mini_product_viewer scroll_animate move_focus"
+            poster="public/models/cabbage_poster.png"
+            src="public/models/savoy_cabbage.glb"
+            ios-src="public/models/Savoy_Cabbage.usdz"
+            camera-controls
+            tone-mapping="neutral"
+            shadow-intensity="1" 
+            exposure="1"
+            camera-orbit="153.4deg 38.32deg 26.92m"
+            field-of-view="30deg" 
+            auto-rotate
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            ar-placement="floor"
+            exposure="1.2"
+            shadow-intensity="1.2"
+            disable-zoom>
         </div>
         <!-- END -->
-     </section>
+     </section></main>
      <footer>
             <div class="container">
                 <div class="footer_container">
@@ -420,13 +420,13 @@ Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.<
                  <ul class="flex_column list2">
                     <h4 class="h4_2 text_bold">Quick Links</h4>
                     <li>
-                        <a href="#"><h6 class="text_regular">Home</h6></a>
+                        <a href="index.html"><h6 class="text_regular">Home</h6></a>
                     </li>
                     <li>
-                        <a href="#"><h6 class="text_regular">Products</h6></a>
+                        <a href="products.html"><h6 class="text_regular">Products</h6></a>
                     </li>
                     <li>
-                        <a href="#"><h6 class="text_regular">About</h6></a>
+                        <a href="about.html"><h6 class="text_regular">About</h6></a>
                     </li>
                      <li>
                         <a href="#"><h6 class="text_regular">Contact</h6></a>
@@ -450,6 +450,8 @@ Discover how we’re reshaping the way Egypt and Saudi shops for fresh produce.<
             </div>
         </footer>
     <!-- MODELVIEWERLIBRARY-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <script src="script.js"></script>
 </body>

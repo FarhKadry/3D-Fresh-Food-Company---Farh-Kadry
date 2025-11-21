@@ -721,5 +721,9 @@ footer .list1{
 .trustees_logo_container img{
     width: 105px;
 }
-
+.about_heromodel{
+    width: 532px;
+    height: 534px;
+    top: -100px;
+}
 }
