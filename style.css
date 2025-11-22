@@ -296,6 +296,21 @@ model-viewer::part(default-progress-bar) {
     opacity: 1;
   }
 }
+.blur_in{
+    opacity: 0;
+     animation: blur-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes blur-in {
+  0% {
+            filter: blur(20px);
+    opacity: 0;
+  }
+  100% {
+            filter: blur(80px);
+    opacity: 1;
+  }
+}
 .greenBg {
     background: var(--mainaccent2);
     opacity: 0.5;
@@ -1148,4 +1163,78 @@ object-fit: cover;
 .timeline_cardHeading model-viewer{
     width: 100px;
 height: 100px;
+}
+.p2_mission{
+    gap: 50px;
+}
+.p2_missionHeading{
+    display: flex;
+    gap: 0;
+    position: relative;
+}
+.p2_missionHeading .arabic_font{
+    position: absolute;
+    right: -80px;
+    top: 0;
+}
+.p2_missionFlex{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 21px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    z-index: 3;
+}
+.scroll_animate4{
+    view-timeline: --scroll-tl;
+    animation-timeline: --scroll-tl;
+    animation-delay: cover 20%;
+    animation-range: cover 20% cover 55%;
+}
+.missionCard{
+    display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 33px 22px;
+box-sizing: border-box;
+gap: 24px;
+flex: 1 0 0;
+border-radius: 22px;
+background: var(--secondarybg);
+box-shadow: -3px 8px 14.6px 0 rgba(235, 240, 235, 0.20);
+backdrop-filter: blur(22.5px);
+}
+.missionCard img{
+    width: 42px;
+    height: 42px;
+}
+.p2_mission1{
+    min-width: calc(50% - 21px);
+}
+.missionimg{
+    width: calc(50% - 21px);
+    object-fit: cover;
+    border-radius: 22px;
+    height: -webkit-fill-available;
+    flex: 1 0 0;
+}
+.p2_mission2{
+    min-width: calc(33% - 21px);
+    width: calc(33% - 21px);
+}
+.missionCard p{
+    min-height: 88px;
+}
+.mission_modelcontainer{
+    background: url(public/images/backgoundimg05.jpg);
+    height: -webkit-fill-available;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mission_modelcontainer model-viewer{
+    background: transparent;
+    height: 90%;
 }
