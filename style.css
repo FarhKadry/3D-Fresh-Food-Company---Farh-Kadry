@@ -983,6 +983,7 @@ flex-shrink: 0;
 .carousel h4{
         font-weight: 500;
         white-space: nowrap;
+        text-transform: uppercase;
     }
 .carousel_imgsize1{
     width: 99px;
@@ -1013,13 +1014,15 @@ object-fit: cover;
     gap: 22px;
     border-top: 1px solid rgba(19, 66, 5, 0.30);
     border-bottom: 1px solid rgba(19, 66, 5, 0.30);
-    background-color: var(--secondarybg);
+    /* background-color: var(--secondarybg); */
     width: fit-content;
 }
 .about_blur{
     filter: blur(20px);
-    height: 200px;
-    bottom: 0;
+    height: 250px;
+    bottom: 50px;
+    background: linear-gradient(180deg, #99BF8C 20%, #D9DED4 121.75%);
+
 }
 .p2_hero{
     height: calc(100vh + 400px);
@@ -1108,7 +1111,41 @@ object-fit: cover;
     color: #134205;
     text-shadow: 0 2px 54.5px rgba(57, 139, 32, 0.27), -1px -3px 0 #FFF;
     font-family: Sansita;
-    font-size: 64px;
     font-style: normal;
     font-weight: 900;
+}
+.carousel-wrapper .blurred_separator{
+    width: 10%;
+    height: 112%;
+    left: -2%;
+    top: -6%;
+}
+.carousel-wrapper .blurred_separator2{
+    width: 10%;
+    height: 112%;
+    left: -2%;
+    top: -6%;
+}
+.carousel-wrapper .blurred_separator3{
+    width: 10%;
+    height: 112%;
+    left: unset;
+    top: -6%;
+    right: -2%;
+}
+.scroll_animate3{
+    view-timeline: --scroll-tl;
+    animation-timeline: --scroll-tl;
+    animation-delay: cover 10%;
+    animation-range: cover 10% cover 50%;
+}
+.timeline_cardHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.timeline_cardHeading model-viewer{
+    width: 100px;
+height: 100px;
 }
