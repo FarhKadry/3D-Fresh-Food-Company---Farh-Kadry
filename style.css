@@ -2,6 +2,7 @@
     --mainaccent: hsla(106, 86%, 14%, 1);
     --mainaccent2: #1C6506;
     --secondaryaccent:hsla(106, 63%, 34%, 1);
+    --accentbg:#2B4922;;
     --extremewhite:hsla(38, 44%, 96%, 1);
     --offwhite: hsla(90, 13%, 85%, 1);
     --greenishgrey: hsla(94, 14%, 46%, 1);
@@ -27,6 +28,7 @@ header{
     display: flex;
     width: 100%;
     box-sizing: border-box;
+    background-color:#d9ded499;
     backdrop-filter: blur(30px);
     position: fixed;
     margin: 0 auto;
@@ -149,6 +151,9 @@ p{
 }
 .text_bold{
     font-weight: 700;
+}
+.text_white{
+    color: var(--extremewhite, #FAF7F2);
 }
 .text_extraBold{
     font-weight: 800;
@@ -995,7 +1000,7 @@ flex-shrink: 0;
     top: -40px;
     position: relative;
 }
-.carousel h4{
+.carousel h4, .carousel2 h4{
         font-weight: 500;
         white-space: nowrap;
         text-transform: uppercase;
@@ -1017,12 +1022,11 @@ object-fit: cover;
     width: 42px;
     height: 42px;
 }
-.carousel-wrapper {
+.carousel-wrapper, .carousel-wrapper2  {
     overflow: hidden;
     position: relative;
 }
-
-.carousel {
+.carousel, .carousel2 {
     display: flex;
     padding: 24px 0;
     align-items: center;
@@ -1032,6 +1036,7 @@ object-fit: cover;
     /* background-color: var(--secondarybg); */
     width: fit-content;
 }
+
 .about_blur{
     filter: blur(20px);
     height: 250px;
@@ -1129,19 +1134,24 @@ object-fit: cover;
     font-style: normal;
     font-weight: 900;
 }
-.carousel-wrapper .blurred_separator{
+.carousel-wrapper .blurred_separator,
+.carousel-wrapper2 .blurred_separator{
     width: 10%;
     height: 112%;
     left: -2%;
     top: -6%;
 }
-.carousel-wrapper .blurred_separator2{
+.carousel-wrapper .blurred_separator2,
+.carousel-wrapper2 .blurred_separator2
+{
     width: 10%;
     height: 112%;
     left: -2%;
     top: -6%;
+    background: #d9ded4;
 }
-.carousel-wrapper .blurred_separator3{
+.carousel-wrapper .blurred_separator3,
+.carousel-wrapper2 .blurred_separator3{
     width: 10%;
     height: 112%;
     left: unset;
@@ -1204,7 +1214,8 @@ flex: 1 0 0;
 border-radius: 22px;
 background: var(--secondarybg);
 box-shadow: -3px 8px 14.6px 0 rgba(235, 240, 235, 0.20);
-backdrop-filter: blur(22.5px);
+backdrop-filter: blur(22px);
+    height: -webkit-fill-available;
 }
 .missionCard img{
     width: 42px;
@@ -1228,13 +1239,100 @@ backdrop-filter: blur(22.5px);
     min-height: 88px;
 }
 .mission_modelcontainer{
-    background: url(public/images/backgoundimg05.jpg);
+    background: url(public/images/backgoundimg12.jpg);
     height: -webkit-fill-available;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    justify-content: center;
 }
 .mission_modelcontainer model-viewer{
     background: transparent;
     height: 90%;
+    z-index: 2;
+    
+}
+.blur_size3{
+    position: absolute;
+    z-index: 1;
+    background: var(--extremewhite);
+    top: calc(50% - 80px);
+    left: calc(50% - 80px);
+    height: 168px;
+    width: 168px;
+    filter: blur(18px);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+.testimonials{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+background: var(--accentbg);
+border-radius: 36px;
+position: relative;
+width: 100%;
+box-sizing: border-box;
+}
+.testimonials_content{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 42px 92px;
+    box-sizing: border-box;
+}
+.testimonials_content p{
+    font-style: italic;
+    position: relative;
+    padding: 0 12px;
+}
+.testimonials_content p img{
+    width: 42px;
+height: 30px;
+display: inline-block;
+position: absolute;
+}
+.testimonials_content p .img1{
+    left: -32px;
+    top: -22px;
+}
+.testimonials_content p .img2{
+    right:-32px;
+    bottom: -22px;
+    
+}
+.testimonials_person{
+    height: 100%;
+    object-fit: cover;
+    width: auto;
+    max-width: 40%;
+    border-radius: 36px;
+    z-index: 2;
+}
+.testimonials .heading2{
+    margin-bottom: 12px;
+}
+.testimonials h4{
+    margin-bottom: 8px;
+}
+.testimonials_stars{
+    display: flex;
+    gap: 4px;
+    margin-top: 20px;
+}
+.testimonials_stars img{
+    width: 48px;
+}
+.testimonials .blur_size3{
+    width: 400px;
+height: 400px;
+opacity: 0.2;
+right: 20%;
+top: 0;
+left: unset;
+filter: blur(100px);
 }
