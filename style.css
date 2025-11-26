@@ -737,6 +737,7 @@ button:hover .icon1, button .icon2{
     gap: 40px;
     overflow: visible;
     max-width: 1124px;
+    z-index: 3;
 }
 .space1{
     width: 100%;
@@ -909,7 +910,7 @@ footer{
     gap: 64px;
     background: var(--footer);
     position: sticky;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     z-index: 10;
     
 }
@@ -1060,32 +1061,32 @@ object-fit: cover;
     display: flex;
     align-items: flex-start;
     gap: 22px;
+    width:588px ;
 }
 .timeline_logoflex .logo{
-    height: 379px;
-    width: auto;
+    width: 50%
 }
 .timeline_logoflex .img{
-    width: 288px;
-    height: 313px;
+    width: 50%;
+    max-height: 313px;
     border-radius: 212px  22px  221px 0;
 }
 .timeline_flex{
     display: flex;
     align-items: flex-start;
-    gap: 31px;
+    gap: 32px;
     height: fit-content;
 }
 .timeline_flex .left{
     align-items: flex-start;
     height: 100%;
     padding-top: 266px;
-    gap: 225px;
+    gap: 222px;
     align-self: stretch;
 }
 .timeline_flex .right{
     display: flex;
-    padding: 91px 0;
+    padding: 92px 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 200px;
@@ -1105,14 +1106,14 @@ object-fit: cover;
 .timeline_card{
     gap: 30px;
     display: flex;
-    padding: 42px 41px;
+    padding: 42px;
     flex-direction: column;
-    border-radius: 21px;
+    border-radius: 22px;
     border: 0.821px solid #FFF;
     background: rgba(228, 245, 223, 0.29);
     box-shadow: 0 2px 50px 0 rgba(57, 139, 32, 0.354);
     backdrop-filter: blur(7px);
-    max-width: 361px;
+    max-width: 362px;
     box-sizing: border-box;
 }
 .timeline_blur{
@@ -1335,4 +1336,121 @@ right: 20%;
 top: 0;
 left: unset;
 filter: blur(100px);
+}
+.p2_form{
+    display: flex;
+    width: 25%;
+    padding: 100x 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.form_content{
+    display: flex;
+    padding-bottom: 23px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+/* PRODUCTS PAGE START */
+.p3_hero{
+z-index: 3;
+}
+.p3_hero .hero_content{
+    padding: 80px 40px;
+    background: var(--secondarybg);
+    justify-content: space-between;
+align-items: flex-start;
+flex-direction: row;
+gap: 62px;
+}
+.p3_mainmodel{
+    width: 391.928px;
+height: 400px;
+}
+.Hotspot{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+background: none;
+}
+.HotspotAnnotation{
+background: rgb(248, 248, 248);
+border-radius: 4px;
+padding: 6px 10px;
+}
+.hotspoticon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px dashed var(--extremewhite);
+    background: var(--accentbg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(-0.75px 0 5.625px #FFF);
+    animation: rotate 7s linear infinite;
+    
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.hotspoticon span{
+    background-color: var(--extremewhite);
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    animation: flickerPulse 1s linear infinite;
+}
+@keyframes flickerPulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.p3_herotext{
+    width: calc(60% - 22px);
+    gap: 22px;
+}
+.p3_herotext h4, .p3_herotext h5{
+    color: var(--secondaryaccent);
+}
+.p3_smartshoppingheader{
+    background: linear-gradient(180deg, var(--offwhite) 0%, rgba(197, 215, 190, 0.324) 100%), url(public/images/backgoundimg13.png) lightgray -16px -54.071px / 101.256% 117.193% no-repeat;
+    background-position: bottom;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    margin-bottom: 200px;
+}
+.smartshop_headcontainer1 {
+    width: 387px;
+    height: 141px;
+    overflow: visible;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    z-index: 6;
+}
+.phonebg2{
+    background-position: center;
+    background-size: cover;
+    height: 545px;
+    width: 437px;
+    background-image: url(public/images/phone\ 2.png);
+    margin: 0 auto;
 }
