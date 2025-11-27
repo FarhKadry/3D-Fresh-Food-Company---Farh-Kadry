@@ -58,7 +58,8 @@ body{
 .blurred_separator span{
     width: 100%;
     filter: blur(28px);
-    left: -5%;
+    left: 0;
+    position: relative;
 }
 .blur_size1{
     width: 550px;
@@ -115,7 +116,6 @@ h4{
 }
 .h4_2{
     font-size: 20px;
-    
 }
 h3{
     font-size: 42px;
@@ -690,7 +690,8 @@ button:hover .icon1, button .icon2{
 
 }
 .heading_padding{
-    padding: 0 32px;
+    padding: 0;
+    align-self: center;
     box-sizing: border-box;
     width: 100%;
 }
@@ -701,6 +702,7 @@ button:hover .icon1, button .icon2{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
     gap: 12px;
     margin-top: 40px;
 }
@@ -738,6 +740,7 @@ button:hover .icon1, button .icon2{
     overflow: visible;
     max-width: 1124px;
     z-index: 3;
+    justify-content: center;
 }
 .space1{
     width: 100%;
@@ -810,7 +813,7 @@ button:hover .icon1, button .icon2{
     transition: all 200ms ease-in;
 }
 .product_card:hover{
-    box-shadow: 0 4px 20px 0 rgba(6, 46, 15, 0.194);
+    box-shadow: 0 4px 20px 0 rgba(57, 139, 32, 0.20);
 }
 .product_card:hover .tag3d{
     background-image: url(public/images/3dicon2.svg);
@@ -881,8 +884,12 @@ button:hover .icon1, button .icon2{
     z-index: 7;
 }
 .p1_final{
-    gap: 80px;
     background: linear-gradient(180deg, #D9DED4 0%, #E8EBE6 50%, #C4D7BF 100%);
+    flex-direction: row;
+    z-index: 7;
+}
+.p1_final .container{
+    gap: 80px;
     flex-direction: row;
 }
 .ar_phoneBg{
@@ -1236,6 +1243,10 @@ backdrop-filter: blur(22px);
     min-width: calc(33% - 21px);
     width: calc(33% - 21px);
 }
+.p2_mission3{
+    min-width: calc(33% - 21px);
+    width: calc(33% - 21px);
+}
 .missionCard p{
     min-height: 88px;
 }
@@ -1247,6 +1258,8 @@ backdrop-filter: blur(22px);
     background-size: cover;
     position: relative;
     justify-content: center;
+    min-width: calc(30% - 21px);
+    width: calc(50% - 21px);
 }
 .mission_modelcontainer model-viewer{
     background: transparent;
@@ -1382,8 +1395,8 @@ border-radius: 4px;
 padding: 6px 10px;
 }
 .hotspoticon{
-    width: 32px;
-    height: 32px;
+    width:26px;
+    height: 26px;
     border-radius: 50%;
     border: 1px dashed var(--extremewhite);
     background: var(--accentbg);
@@ -1431,7 +1444,7 @@ padding: 6px 10px;
     color: var(--secondaryaccent);
 }
 .p3_smartshoppingheader{
-    background: linear-gradient(180deg, var(--offwhite) 0%, rgba(197, 215, 190, 0.324) 100%), url(public/images/backgoundimg13.png) lightgray -16px -54.071px / 101.256% 117.193% no-repeat;
+    background: linear-gradient(180deg, var(--offwhite) 0%, rgba(197, 215, 190, 0.324) 100%), url(public/images/backgoundimg13.png) var(--offwhite) -16px -54.071px / 101.256% 117.193% no-repeat;
     background-position: bottom;
     background-size: 120%;
     background-repeat: no-repeat;
@@ -1453,4 +1466,132 @@ padding: 6px 10px;
     width: 437px;
     background-image: url(public/images/phone\ 2.png);
     margin: 0 auto;
+}
+.filters2{
+    display: flex;
+    height: 169px;
+    width: 158px;
+    padding: 28px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    box-sizing: border-box;
+    gap: 6px;
+    color: var(--mainaccent, #134205);
+    border-radius: 21px;
+    background-color: #13420500;
+    border: 1px solid rgba(19, 66, 5, 0.30);
+    transition: all 200ms ease-in-out;
+}
+.filter2Selected{
+    background: var(--mainaccent, #134205);
+}
+.filter2Selected h5{
+    color: var(--offwhite, #D9DED4);
+    font-weight: 400;
+    transition: all 200ms ease-in-out;
+}
+.filters2 model-viewer{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+}
+.filters2 div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    left: 0;
+    transition: all 200ms ease-in-out;
+}
+.filters2 div span{
+    display: block;
+    height: 71px;
+    width: 71px;
+    border-radius: 50%;
+    background:var(--mainaccent2);
+    opacity: 0.7;
+    filter: blur(18px);
+    position: relative;
+    top: 21%;
+
+    transition: all 200ms ease-in;
+}
+.filters2:hover {
+    /* border: 1px solid rgb(19, 66, 5); */
+    box-shadow: 0 4px 10px 0 rgba(57, 139, 32, 0.10);
+}
+.filters2:hover h5 {
+    font-weight: 500;
+}
+.filters2:hover div span{
+    opacity: 0.9;
+    filter: blur(22px);
+}
+.filters_flex2{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.allfilters{
+    margin-top: 22px;
+}
+.pagevication_container{
+    display: flex;
+    padding: 80px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 50%;
+    border: 0.6px solid var(--mainaccent, #134205);
+}
+.page_icon{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.page_active{
+    color: var(--extremewhite);
+    background: var(--accentbg);
+}
+.searchbar{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    /* border: 1px solid var(--accentbg); */
+background: rgba(19, 66, 5, 0.10);
+margin-top: 16px;
+margin-bottom: 40px;
+}
+.searchbar input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 14px;
+  color: var(--accentbg)
+}
+.searchbar h5{
+    opacity: 0.6;
+}
+.searchbar img{
+    width: 32px;
+    outline: none;
+}
+.products_flex2{
+    align-items: flex-start;
+    justify-content: flex-start;
 }

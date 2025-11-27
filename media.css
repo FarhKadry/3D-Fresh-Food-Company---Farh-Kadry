@@ -122,7 +122,7 @@ p{
     gap: 22px;
     overflow-x: scroll;
     padding-bottom: 22px;
-    max-width: 1124px;
+    max-width: 100%;
 }
 .product_card{
     top: unset;
@@ -209,7 +209,7 @@ footer .list1{
     font-size: 16px;
     padding: 0 8px 0 22px;
 }
-.p1_final{
+.p1_final .container{
     flex-direction: column;
     gap: 22px;
 }
@@ -229,6 +229,7 @@ footer .list1{
         flex-wrap: nowrap;
         flex-direction: unset;
         overflow-x: scroll;
+        max-width: unset;
     }
     .trustees_logo_container {
         width: 100%;
@@ -285,6 +286,9 @@ flex-direction: column-reverse;
 .timeline_logoflex .img{
     max-height: 285px;
     border-radius: 172px 22px 171px 0;
+}
+.p2_missionHeading .arabic_font {
+    right: -60px;
 }
 }
 
@@ -365,10 +369,9 @@ p{
     padding: 80px 42px;
 }
 .products_flex{
-    display: flex;
     gap: 40px;
     overflow-x: scroll;
-    max-width: 1124px;
+    max-width: 100%;
     padding-bottom: 22px;
 }
 .product_card{
@@ -497,7 +500,7 @@ footer .list1{
 .button3{
     padding: 6px 16px;
 }
-.p1_final{
+.p1_final .container{
     flex-direction: row;
 }
 .button5{
@@ -516,6 +519,7 @@ footer .list1{
         flex-wrap: nowrap;
         flex-direction: unset;
         overflow-x: scroll;
+        max-width: unset;
     }
     .trustees_logo_container {
         width: 100%;
@@ -572,6 +576,9 @@ flex-direction: row;
 .timeline_logoflex .img{
     max-height: 285px;
     border-radius: 212px  22px  221px 0;
+}
+.p2_missionHeading .arabic_font {
+    right: -70px;
 }
 }
 
@@ -652,10 +659,10 @@ p{
     padding: 120px 72px;
 }
 .products_flex{
-    display: flex;
     gap: 40px;
-    overflow: visible;
-    max-width: 1124px;
+    overflow-x: auto;
+    max-width: 100%;
+    padding-bottom: 22px;
 }
 .product_card{
     top: unset;
@@ -722,7 +729,7 @@ footer .list1{
     align-items: flex-start;
     justify-content: flex-start;
 }
-.p1_final{
+.p1_final .container{
     flex-direction: row;
 }
 .p1_leaf1{
@@ -769,6 +776,8 @@ footer .list1{
     min-width: 276px;
     flex-wrap: wrap;
     flex-direction: unset;
+    max-width: 576px;
+
 }
 .p1_section3{
     flex-direction: row;
@@ -834,5 +843,8 @@ flex-direction: row;
 .timeline_logoflex .img{
     max-height: 313px;
     border-radius: 212px  22px  221px 0;
+}
+.p2_missionHeading .arabic_font {
+    right: -80px;
 }
 }

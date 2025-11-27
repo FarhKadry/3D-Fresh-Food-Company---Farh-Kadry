@@ -85,7 +85,7 @@
             </div>
         </div>
       </section>
-     <section class="container p1_section5 offwhite_bg ">
+     <section class="container p1_section5  ">
         <div class="blurred_separator blurred_separator2 separator_top offwhite_bg">
         <span></span>
     </div>
@@ -98,16 +98,51 @@
                 <h3 class="text_aligncenter">
                     Browse Our Products
                 </h3>
-                <h4 class="text_aligncenter text_light mini_title"> Explore <b>every detail</b>  of our different produce in 3D</h4>
-                <div class="filters_flex1">
+                <form class="searchbar" role="search">
+                         <img src="public/images/icon05search.svg">
+                        <input type="search" placeholder="Enter product keyword here" name="search">
+                        </form>
+                    <!-- FILTERS -->
+                 <div class="flex_column allfilters">
+                    <h4 class="text_bold text_aligncenter">Filter By</h4>
+                     <!-- FILTERES1 -->
+                <div class="filters_flex1 filters_flex2">
                     <button class="filter_tag1"><img src="public/images/winter.svg">Winter</button>
                     <button class="filter_tag1"><img src="public/images/spring.svg">Spring</button>
                     <button class="filter_tag1"><img src="public/images/autumn.svg">Autumn</button>
                     <button class="filter_tag1"><img src="public/images/summer.svg">Summer</button>
                 </div>
+                <!-- FILTERES2 -->
+                 <div class="filters_flex1 filters_flex2">
+                    <!-- 1 -->
+                    <button class="filters2 move_focus scroll_animate2">
+                        <div><span></span></div>
+                            <model-viewer src="public/models/melon.glb"  auto-rotate tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.79" camera-orbit="483deg 100deg 20m" field-of-view="20deg" auto-rotate disable-zoom disable-tap interaction-prompt="none"> </model-viewer>
+                        <h5 class="text_regular">Fruits</h5>
+                    </button>
+                    <!-- 2 -->
+                     <button class="filters2 move_focus scroll_animate2">
+                        <div><span></span></div>
+                            <model-viewer src="public/models/taro_satoimo_3d_scan.glb"  auto-rotate tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.79" camera-orbit="483.1deg 141.6deg 0.1333m"  field-of-view="26deg" auto-rotate disable-zoom disable-tap interaction-prompt="none"> </model-viewer>
+                        <h5 class="text_regular">Roots</h5>
+                    </button>
+                    <!-- 3 -->
+                     <button class="filters2 move_focus scroll_animate2">
+                        <div><span></span></div>
+                            <model-viewer src="public/models/savoy_cabbage.glb"  auto-rotate tone-mapping="neutral" poster="poster.webp" shadow-intensity="0" exposure="0.79" camera-orbit="90deg 38.32deg 26.92m" field-of-view="25deg" auto-rotate disable-zoom disable-tap interaction-prompt="none"> </model-viewer>
+                        <h5 class="text_regular">Leaves</h5>
+                    </button>
+                    <!-- 4 -->
+                     <button class="filters2 move_focus scroll_animate2">
+                        <div><span></span></div>
+                            <model-viewer src="public/models/cucumbers.glb"  auto-rotate tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.79" camera-orbit="483deg 40deg 20m" field-of-view="35deg" auto-rotate disable-zoom disable-tap interaction-prompt="none"> </model-viewer>
+                        <h5 class="text_regular">Vegetables</h5>
+                    </button>
+                </div>
+                </div>
             </div>
             <span class="space1"></span>
-            <div class="products_flex focus_in scroll_animate">
+            <div class="products_flex products_flex2 focus_in scroll_animate">
                 <!-- 1 -->
                 <div class="mini_productcard product_card ">
                      <span class="tag3d"></span>
@@ -210,73 +245,96 @@
                     </div>
                 </div>
                 </div>
+                <!-- 4 -->
+                 <div class="mini_productcard product_card">
+                    <span class="tag3d"></span>
+                <!-- CABBAGE MODEL -->
+                <model-viewer class="mini_product_viewer"  src="public/models/cucumbers.glb" camera-controls 
+                tone-mapping="neutral"
+                shadow-intensity="1" exposure="1" 
+                camera-orbit="153.4deg 38.32deg 26.92m" 
+                field-of-view="30deg" 
+                auto-rotate 
+                disable-zoom>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer>
+                <h3 class="h3_2 text_extraBold text_uppercase">cucumbers</h3>
+                <div class="rating_flex">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <h6>220 Reviews</h6>
+                </div>
+                <div class="text_buttonFlex">
+                    <h4 class="h4_2 text_semibold">View Item</h4>
+                    <div class="button_container3">
+                        <button class="button2 button3 button5">
+                            <img class="icon1" src="public/images/arrowwhite.svg"> 
+                            <img class="icon2" src="public/images/arrowgreen.svg">
+                         </button>
+                    </div>
+                </div>
+                </div>
+                <!-- 5 -->
+                 <div class="mini_productcard product_card">
+                    <span class="tag3d"></span>
+                <!-- CABBAGE MODEL -->
+                <model-viewer class="mini_product_viewer"  src="public/models/cucumbers.glb" camera-controls 
+                tone-mapping="neutral"
+                shadow-intensity="1" exposure="1" 
+                camera-orbit="153.4deg 38.32deg 26.92m" 
+                field-of-view="30deg" 
+                auto-rotate 
+                disable-zoom>
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer>
+                <h3 class="h3_2 text_extraBold text_uppercase">cucumbers</h3>
+                <div class="rating_flex">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <img src="public/images/star.svg">
+                    <h6>220 Reviews</h6>
+                </div>
+                <div class="text_buttonFlex">
+                    <h4 class="h4_2 text_semibold">View Item</h4>
+                    <div class="button_container3">
+                        <button class="button2 button3 button5">
+                            <img class="icon1" src="public/images/arrowwhite.svg"> 
+                            <img class="icon2" src="public/images/arrowgreen.svg">
+                         </button>
+                    </div>
+                </div>
+                </div>
             </div>
             <div class="button_container2"><button class="button2 main_button">View All Products <div><img src="public/images/arrowgreen.svg"> </div></button></div>
         </div>
         <span class="space1"></span>
      </section>
-     <!-- SECTION6 -->
-      <section class="container p1_section6 offwhite_bg">
-        <div class="blurred_separator blurred_separator2 separator_top offwhite_bg">
+
+     <!-- SECTION-->
+      <section class="container p1_section6 ">
+        <div class="testimonials">
+            <div class="blurred_separator blurred_separator2 separator_top offwhite_bg">
         <span></span>
-    </div>
-        <span class="greenBg blur_size1 hero_blur2"></span>
-        <div class="flex_column">
-            <div class="heading_text_block scroll_animate2 focus_in">
-               <h2 class="text_aligncenter arabic_font">
-ما الاختلاف في متجاتنا؟                </h2>
-                <h3 class="text_aligncenter">
-                    What differentiates our products?
-                </h3>   
-            </div>
-            <div class="taro_model_bg focus_in scroll_animate">
-                 <div class="difference_content difference_left">
-                    <div class="flex_column move_focus scroll_animate2">
-                        <h4>Transparent Origins</h4>
-                    <p>Every product tells its full farm-to-table story.</p>
-                    </div>
-                    <div class="flex_column difference_moved1 move_focus scroll_animate2">
-                         <h4>Transparent Origins</h4>
-                    <p>Every product tells its full farm-to-table story.</p>
-                    </div>
-                 </div>
-                 <model-viewer class="taro_model move_focus scroll_animate2" src="public/models/taro_satoimo_3d_scan.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" exposure="0.79" camera-orbit="483.1deg 141.6deg 0.1333m" field-of-view="30deg" auto-rotate disable-zoom disable-tap> </model-viewer>
-                 <div class="difference_content difference_right">
-                    <div class="flex_column move_focus scroll_animate2">
-                        <h4>Transparent Origins</h4>
-                    <p>Every product tells its full farm-to-table story.</p>
-                    </div>
-                    <div class="flex_column difference_moved1 move_focus scroll_animate2">
-                         <h4>Transparent Origins</h4>
-                    <p>Every product tells its full farm-to-table story.</p>
-                    </div>
-                 </div>
-            </div>
+        </div>
         </div>
      </section>
      <!-- FINALSECTION -->
-      <section class="container p1_section6 p1_final offwhite_bg">
-        <div class="blurred_separator blurred_separator2 separator_top offwhite_bg">
+      <section class=" p1_section6 p1_final offwhite_bg">
+        <div class="container">
+            <div class="blurred_separator blurred_separator2 separator_top offwhite_bg">
         <span></span>
     </div>
         <span class="greenBg blur_size1 hero_blur2"></span>
-        <!-- ARSTART -->
-        <div class="flex_column">
-            <div class="heading_text_block scroll_animate2 focus_in">
-               <h2 class="text_alignleft arabic_font">
-كن جزءًا من النمو</h2>
-                <h3 class="text_alignleft">
-                    Be Part of the Growth
-                </h3>
-                <p>Join the Hayat Family and experience the future of organic farming. Connect with local farmers, explore produce in augmented reality, and be part of a sustainable food revolution.</p>   
-            <div class="button_container2">
-               <button id="arButton1" class="button2 main_button">
-    Experience in AR 
-    <div><img src="public/images/arrowgreen.svg"></div>
-</button>
-        </div>
-            </div>
-        </div>
+        
         <div class="ar_phoneBg">
             <model-viewer 
             id="productModel1"
@@ -299,9 +357,27 @@
             disable-zoom>
              </model-viewer>
         </div>
-   
+        <!-- ARSTART -->
+        <div class="flex_column">
+            <div class="heading_text_block scroll_animate2 focus_in">
+               <h2 class="text_alignleft arabic_font">
+كن جزءًا من النمو</h2>
+                <h3 class="text_alignleft">
+                    Be Part of the Growth
+                </h3>
+                <p>Join the Hayat Family and experience the future of organic farming. Connect with local farmers, explore produce in augmented reality, and be part of a sustainable food revolution.</p>   
+            <div class="button_container2">
+               <button id="arButton1" class="button2 main_button">
+    Experience in AR 
+    <div><img src="public/images/arrowgreen.svg"></div>
+</button>
+        </div>
+            </div>
+        </div>
         </section>
         <!-- END -->
+        </div>
+        
      </section></main>
      <footer>
             <div class="container">
