@@ -377,6 +377,23 @@ gap: 8px;
 .soilTeir h1 {
     font-size: 64px;
 }
+.prod_faq .container{
+    gap: 32px;
+    justify-content: center;
+    padding: 42px 32px;
+    flex-direction: column;
+}
+.faq_card{
+    padding: 24px 32px;
+    border-radius: 52px;
+}
+.faq_right {
+width: 100%;
+}
+.faq_left{
+width:100%;
+padding: 50px 0 0 0;
+}
 }
 
 @media (min-width: 701px) and (max-width: 1041px){
@@ -724,6 +741,23 @@ gap: 6px;
     flex-direction: row;
     gap: 34px;
 }
+.prod_faq .container{
+    gap: 32px;
+    justify-content: space-between;
+    padding: 0 42px;
+    flex-direction: row;
+}
+.faq_card{
+    padding: 24px 58px;
+    border-radius: 52px;
+}
+.faq_right {
+width: calc(60% - 32px);
+}
+.faq_left{
+width: calc(50% - 32px);
+padding: 120px 0;
+}
 }
 
 /* DESKTOP */
@@ -1050,5 +1084,22 @@ gap: 6px;
 }
 .prod_detailss2{
     flex-direction: row;
+}
+.prod_faq .container{
+    gap: 32px;
+    justify-content: space-between;
+    padding: 0 72px;
+    flex-direction: row;
+}
+.faq_card{
+    padding: 24px 58px;
+    border-radius: 52px;
+}
+.faq_right {
+width: calc(50% - 32px);
+}
+.faq_left{
+width: calc(50% - 32px);
+padding: 120px 0;
 }
 }

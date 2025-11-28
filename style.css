@@ -53,7 +53,8 @@ body{
     overflow-x: hidden;
 }
 .blurred_separator{
-    width: 100vw;
+    width: 120vw;
+    left: -10vw;
     height: 300px;
     position: absolute;
     display: flex;
@@ -158,6 +159,9 @@ p{
 }
 .text_white{
     color: var(--extremewhite, #FAF7F2);
+}
+.text_offwhite{
+    color: var(--offwhite);
 }
 .text_extraBold{
     font-weight: 800;
@@ -563,9 +567,7 @@ button:hover .icon1, button .icon2{
     overflow: visible;
     object-fit: none;
 }
-.offwhite_bg{
-    background: var(--offwhite);
-}
+
 .white_bg{
     background: var(--extremewhite);
 }
@@ -1829,4 +1831,111 @@ video::-webkit-media-controls-enclosure {
 }
 .prod_faq{
     background: var(--accentbg);
+    position: relative;
+}
+.prod_faq .container{
+    gap: 32px;
+    justify-content: space-between;
+    padding: 0 72px;
+    flex-direction: row;
+}
+.faq_left{
+width: calc(50% - 32px);
+padding: 120px 0;
+}
+  .faq_answer {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.prod_faq h2, .prod_faq h3,
+.prod_faq h4, .prod_faq p{
+    color: var(--offwhite);
+}
+.faq_wrapper{
+    height: 500px;
+    overflow-y: scroll;
+    width: 100%;
+    overflow-x: hidden;
+    align-self: flex-start;
+    padding-right: 22px;
+    box-sizing: border-box;
+}
+.faq_card{
+    display: flex;
+    padding: 24px 58px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 52px;
+background: var(--offwhite, #D9DED4);
+width: 100%;
+box-sizing: border-box;
+gap: 8px;
+}
+.faq_card h4, .faq_card p{
+color: var(--mainaccent);
+}
+.faq_card h4{
+font-weight: 500;
+text-transform: uppercase;
+}
+.faq_flex{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 22px;
+align-self: stretch;
+max-width: 580px;
+
+}
+.icon_size2{
+width: 52px;
+min-width: 52px;
+height: 52px;
+background: var(--offwhite);
+transition: all 200ms ease-in;
+}
+.icon_size2 img {
+    width: 20px;
+    height: auto;
+    transform: rotate(0);
+    transition: all 200ms ease;
+}
+.icon_size2:hover img{
+    transform: rotate(90deg);
+}
+.icon_size2:hover{
+    background: var(--mainaccent);
+}
+.offwhite_bg{
+    background: var(--offwhite);
+}
+.secondary_btn{
+    background: none;
+    backdrop-filter: blur(8px);
+    color: var(--offwhite);
+    border: 1px solid var(--offwhite);
+    box-shadow: none;
+}
+.faq_left .main_buttoncontainer{
+    position: relative;
+    margin-top: 22px;
+    justify-content: flex-end;
+}
+.faq_right {
+width: calc(50% - 32px);
+padding-top: 20px;
+}
+.prod_faq h3 {
+    margin: 22px 0 8px 0;
+}
+/* STAGES */
+.prod_stagesCard{
+    border-radius: 22px;
+    border: 1px solid rgba(19, 66, 5, 0.30);
+    background: #E5EAE1;
+    box-shadow: 4px 4px 28px 0 rgba(57, 139, 32, 0.10);
+    backdrop-filter: blur(22.5px);
 }
