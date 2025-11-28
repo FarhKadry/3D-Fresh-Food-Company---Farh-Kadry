@@ -394,6 +394,29 @@ width: 100%;
 width:100%;
 padding: 50px 0 0 0;
 }
+.prod_stages .container{
+flex-wrap: wrap;
+gap: 52px;
+}
+.prod_stagesCard{
+    padding: 33px 22px;
+    width: calc(50% - 54px);
+    height: 400px;
+}
+.prod_stagesCard1{
+    width: calc(50% - 54px);
+    height: 400px;
+}
+.prod_stagesCard1 img {
+    width: 140%;
+    height: auto;
+    max-height: 80%;
+    object-fit: cover;
+}
+.p2_mission2 {
+    min-width: calc(50% - 21px);
+    width: calc(50% - 21px);
+}
 }
 
 @media (min-width: 701px) and (max-width: 1041px){
@@ -758,6 +781,35 @@ width: calc(60% - 32px);
 width: calc(50% - 32px);
 padding: 120px 0;
 }
+.prod_stages .container{
+flex-wrap: wrap;
+gap: 52px;
+}
+.prod_stagesCard{
+    padding: 33px 22px;
+    width: calc(50% - 54px);
+    height: 400px;
+}
+.prod_stagesCard1{
+    width: calc(50% - 54px);
+    height: 400px;
+}
+.prod_stagesCard1 img {
+    width: 100%;
+    height: auto;
+    max-height: 80%;
+    object-fit: cover;
+}
+.p2_mission2 {
+    min-width: calc(33% - 21px);
+    width: calc(33% - 21px);
+}
+.halloween .main_buttoncontainer{
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px  20px 0;
+    box-sizing: border-box;
+}
 }
 
 /* DESKTOP */
@@ -1101,5 +1153,34 @@ width: calc(50% - 32px);
 .faq_left{
 width: calc(50% - 32px);
 padding: 120px 0;
+}
+.prod_stages .container{
+flex-wrap: nowrap;
+gap: 52px;
+}
+.prod_stagesCard{
+    padding: 33px 22px;
+    width: calc(25% - 54px);
+    height: 400px;
+}
+.prod_stagesCard1{
+    width: calc(25% - 54px);
+    height: 400px;
+}
+.prod_stagesCard1 img {
+    width: 100%;
+    height: auto;
+    max-height: 80%;
+    object-fit: cover;
+}
+.p2_mission2 {
+    min-width: calc(33% - 21px);
+    width: calc(33% - 21px);
+}
+.halloween .main_buttoncontainer{
+    align-items: center;
+    justify-content: center;
+    padding: 20px 114px  20px 0;
+    box-sizing: border-box;
 }
 }
