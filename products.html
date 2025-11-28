@@ -39,14 +39,14 @@
             <h4 class="arabic_font text_alignleft">أبرز منتج</h4>
             <h5 class="text_alignleft">TOP PRODUCT</h5>
         </div>
-        <div class="flex_column"><h2 class="text_uppercase text_black text_alignleft">NATURAL Pumpkin</h2>
+        <div class="flex_column"><h2 class="text_uppercase text_black text_alignleft">green Pumpkin</h2>
             <h3 class="h3_2 text_regular text_alignleft">Naturally soft, freshly harvested, and full of life.</h3></div>
         <p class="text_alignleft">Our Natural Squash is grown in mineral-rich soil and nurtured with pure groundwater, preserving its natural texture and earthy flavor. Ideal for fresh salads, wraps, and healthy meals.</p>
         <div>
-                <button class="button2 main_button">Learn its Story <div><img src="public/images/arrowgreen.svg"> </div></button>
+                <a href="productdetails.html" class="button2 main_button">Learn its Story <div><img src="public/images/arrowgreen.svg"> </div></a>
         </div>
     </div>
-           <model-viewer class="p3_mainmodel" src="public/models/pumpkin_3d_scan.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="240deg 70deg 50m" field-of-view="10deg" disable-zoom disable-tap>
+           <model-viewer class="p3_mainmodel move_focus" src="public/models/pumpkin_3d_scan.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="240deg 70deg 50m" field-of-view="10deg" disable-zoom disable-tap>
             <button class="Hotspot" slot="hotspot-1" data-position="-0.011277293435224102m 0.08356705125291983m 0.02038324142296448m" data-normal="0.17418415019650385m 0.9505172211032153m -0.257248701078437m" data-visibility-attribute="visible">
                 <div class="hotspoticon"><span></span> </div>
                 <div class="HotspotAnnotation">Vit. B6</div>
@@ -85,7 +85,7 @@
             </div>
         </div>
       </section>
-     <section class="container p1_section5  ">
+     <section class="container">
         <div class="blurred_separator blurred_separator2 separator_top offwhite_bg">
         <span></span>
     </div>
@@ -142,6 +142,7 @@
                 </div>
             </div>
             <span class="space1"></span>
+            <h3 class="text_aligncenter moved_heading ">Winter Vegetables</h3>
             <div class="products_flex products_flex2 focus_in scroll_animate">
                 <!-- 1 -->
                 <div class="mini_productcard product_card ">
@@ -314,11 +315,14 @@
                 </div>
                 </div>
             </div>
-            <div class="button_container2"><button class="button2 main_button">View All Products <div><img src="public/images/arrowgreen.svg"> </div></button></div>
         </div>
         <span class="space1"></span>
      </section>
-
+     <div class="container pagevication_container">
+        <button class="page_icon page_active">1</button>
+        <button class="page_icon">2</button>
+        <button class="page_icon">3</button>
+     </div>
      <!-- SECTION-->
       <section class="container p1_section6 ">
         <div class="testimonials">
@@ -328,13 +332,13 @@
         </div>
      </section>
      <!-- FINALSECTION -->
-      <section class=" p1_section6 p1_final offwhite_bg">
+      <section class=" p1_section6 p1_final sticky offwhite_bg">
         <div class="container">
             <div class="blurred_separator blurred_separator2 separator_top offwhite_bg">
         <span></span>
     </div>
         <span class="greenBg blur_size1 hero_blur2"></span>
-        
+        <!-- ARSTART -->
         <div class="ar_phoneBg">
             <model-viewer 
             id="productModel1"
@@ -357,13 +361,12 @@
             disable-zoom>
              </model-viewer>
         </div>
-        <!-- ARSTART -->
         <div class="flex_column">
             <div class="heading_text_block scroll_animate2 focus_in">
                <h2 class="text_alignleft arabic_font">
-كن جزءًا من النمو</h2>
+عش الواقع الافتراضي</h2>
                 <h3 class="text_alignleft">
-                    Be Part of the Growth
+                    Live the AR Experience
                 </h3>
                 <p>Join the Hayat Family and experience the future of organic farming. Connect with local farmers, explore produce in augmented reality, and be part of a sustainable food revolution.</p>   
             <div class="button_container2">
@@ -374,11 +377,11 @@
         </div>
             </div>
         </div>
-        </section>
-        <!-- END -->
         </div>
-        
-     </section></main>
+      </section>
+        <!-- END -->
+     </section>
+    </main>
      <footer>
             <div class="container">
                 <div class="footer_container">
@@ -423,7 +426,6 @@
         </footer>
     <!-- MODELVIEWERLIBRARY-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <script src="script.js"></script>
 </body>

@@ -205,10 +205,11 @@ footer .list1{
     font-size: 16px;
     padding: 8px 22px;
 }
-.main_button{
-    font-size: 16px;
-    padding: 0 8px 0 22px;
+.button2:hover{
+    padding: 8px 22px;
+    box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.40);
 }
+
 .p1_final .container{
     flex-direction: column;
     gap: 22px;
@@ -240,7 +241,7 @@ footer .list1{
     .trustees_logo_container img{
     width: 80px;
 }
-.p1_section3{
+.p1_section3 .container{
     flex-direction: column-reverse;
     margin-bottom: 22px;
 }
@@ -289,6 +290,92 @@ flex-direction: column-reverse;
 }
 .p2_missionHeading .arabic_font {
     right: -60px;
+}
+.pagevication_container{
+    padding: 0 0 40px 0;
+}
+.phonebg2 {
+    height: 373px;
+    width: 437px;
+}
+.scroll_animate2 {
+    view-timeline: --scroll-tl;
+    animation-timeline: --scroll-tl;
+    animation-delay: cover 10%;
+    animation-range: cover 10% cover 15%;
+}
+.button1{
+    padding: 6px 16px 6px 10px; 
+    gap: 12px;
+}
+.button1 div{
+    width: 22px;
+    height: 22px;
+}
+.button1:hover{
+background-color: var(--mainaccent);
+color: var(--extremewhite);
+padding: 6px 22px 6px 12px; 
+gap: 8px;
+}
+.main_button div {
+    width: 28px;
+    height: 28px;
+}
+.main_button div  img{
+    width: 22px;
+    height: auto;
+}
+.main_button{
+    font-size: 16px;
+    padding: 0 8px 0 22px;
+    height: 42px;
+    gap: 12px;
+}
+.main_button:hover{
+    font-size: 16px;
+    padding: 0 8px 0 28px;
+    height: 42px;
+    gap: 20px;
+}
+.prod_hero{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 0 0 0;
+}
+.prod_heromodelContainer{
+       width: 100%;
+}
+.prod_hero .p3_herotext{
+    width: 100%;
+}
+.similar_products{
+     top: 0;
+}
+.video_container {
+    width: calc(38% - 22px);
+    height: 491px;
+    justify-content: center;
+    align-items: center;
+}
+.prod_detailss2{
+    flex-direction: column;
+}
+.soilTeir {
+    justify-content: flex-end;
+    align-items: center;
+    gap: 13px;
+}
+.prod_soilTeirs {
+    gap: 8px;
+    width: 48%;
+    height: auto;
+}
+.soilTeir h3{
+    font-size: 24px;
+}
+.soilTeir h1 {
+    font-size: 64px;
 }
 }
 
@@ -476,21 +563,14 @@ footer .list1{
     top: -10px;
     overflow: visible;
 }
-.button2{
-    padding: 12px 32px;
-    padding: 8px 22px;
-}
 .button2:hover{
-    background-color: var(--extremewhite);
-    color: var(--mainaccent);
-    padding: 12px 32px;
-    border: 1px solid var(--mainaccent);
-    box-sizing: border-box;
+    padding: 10px 34px;
     box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.40);
 }
 .main_button{
     font-size: 20px;
     padding: 0 10px 0 32px;
+    height: 58px;
 }
 .main_button:hover {
     padding: 0 10px 0 32px;
@@ -530,7 +610,7 @@ footer .list1{
 .trustees_logo_container img{
     width: 105px;
 }
-.p1_section3{
+.p1_section3 .container{
     flex-direction: column-reverse;
     margin-bottom: 22px;
 }
@@ -579,6 +659,70 @@ flex-direction: row;
 }
 .p2_missionHeading .arabic_font {
     right: -70px;
+}
+.pagevication_container{
+    padding: 0 0 40px 0;
+}
+.phonebg2 {
+    height: 373px;
+    width: 437px;
+}
+.scroll_animate2 {
+    view-timeline: --scroll-tl;
+    animation-timeline: --scroll-tl;
+    animation-delay: cover 10%;
+    animation-range: cover 10% cover 35%;
+}
+.button1{
+    padding: 6px 16px 6px 10px; 
+    gap: 12px;
+}
+.button1:hover{
+background-color: var(--mainaccent);
+color: var(--extremewhite);
+padding: 6px 22px 6px 12px; 
+gap: 6px;
+}
+.main_button div {
+    width: 42px;
+    height: 42px;
+}
+.main_button div img{
+    width: 28px;
+    height: auto;
+}
+.prod_hero{
+    flex-direction: row;
+    align-items: flex-start;
+}
+.prod_heromodelContainer{
+       width: calc(60% - 32px);
+}
+.prod_hero .p3_herotext{
+    width: calc(40% - 32px);
+}
+.similar_products{
+     top: -50px;
+}
+.video_container {
+    width: calc(38% - 22px);
+    height: 636px;
+    justify-content: center;
+    align-items: center;
+}
+.prod_soilTeirs {
+    gap: 0;
+    width: 37%;
+    max-width: 346px;
+    height: auto;
+}
+
+.soilTeir h1 {
+    font-size: 84px;
+}
+.prod_detailss2{
+    flex-direction: row;
+    gap: 34px;
 }
 }
 
@@ -770,6 +914,7 @@ footer .list1{
 .main_button{
     font-size: 20px;
     padding: 0 10px 0 32px;
+    height: 68px;
 }
 .trustees_logosWrap {
     width: 40%;
@@ -779,7 +924,7 @@ footer .list1{
     max-width: 576px;
 
 }
-.p1_section3{
+.p1_section3 .container{
     flex-direction: row;
     margin-bottom: 300px
 }
@@ -846,5 +991,64 @@ flex-direction: row;
 }
 .p2_missionHeading .arabic_font {
     right: -80px;
+}
+.pagevication_container{
+    padding: 0 0 40px 0;
+}
+.phonebg2 {
+    height: 545px;
+    width: 437px;
+}
+.scroll_animate2 {
+    view-timeline: --scroll-tl;
+    animation-timeline: --scroll-tl;
+    animation-delay: cover 10%;
+    animation-range: cover 10% cover 35%;
+}
+.button1{
+    padding: 6px 22px 6px 12px; 
+    gap: 12px;
+}
+.button1:hover{
+background-color: var(--mainaccent);
+color: var(--extremewhite);
+padding: 6px 22px 6px 12px; 
+gap: 6px;
+}
+.main_button div {
+    width: 52px;
+    height: 52px;
+}
+.prod_hero{
+    flex-direction: row;
+    align-items: flex-start;
+}
+.prod_heromodelContainer{
+       width: calc(60% - 32px);
+}
+.prod_hero .p3_herotext{
+    width: calc(40% - 32px);
+}
+.similar_products{
+     top: -180px;
+}
+.video_container {
+    width: calc(45% - 22px);
+    height: 867px;
+    justify-content: center;
+    align-items: center;
+}
+.prod_soilTeirs {
+    gap: 0;
+    width: 30%;
+    max-width: 346px;
+    height: auto;
+}
+
+.soilTeir h1 {
+    font-size: 110px;
+}
+.prod_detailss2{
+    flex-direction: row;
 }
 }
